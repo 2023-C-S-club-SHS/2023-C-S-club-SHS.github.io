@@ -1,0 +1,30 @@
+.menubar {
+    position: relative;
+    height: 8vw;
+}
+body {
+    margin: 0;
+    background-color: #13223A;
+}
+#mainpicture {
+    width: 100vw;
+    height: 85vh;
+}
+.menu {
+    position: relative;
+    margin-left: 5vw;
+    left: 5vw;
+    top: 3vw;
+    font-size: 1.5vw;
+    text-decoration: none;
+    color: white;
+    font-weight: 900;
+    font-family: AppleGothic, serif;
+}
+#mainlogo {
+    position: absolute;
+    height: 8vw;
+}
+#enroll {
+    color: lawngreen;
+}
