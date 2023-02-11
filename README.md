@@ -1,1 +1,1 @@
-# 2023-C-S-club-SHS.github.io
+# 2023shscsclub.github.io
