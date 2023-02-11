@@ -23,6 +23,7 @@ body {
 }
 #mainlogo {
     float: left;
+    margin-left: 10%;
     height: 100px;
 }
 #enroll {
@@ -64,14 +65,14 @@ body {
     position: relative;
     top: 45%;
     float: left;
-    left: 2%;
+    margin-left: 10%;
     font-weight: 900;
     font-family: AppleGothic, serif;
 }
 .contact {
     position: relative;
     top: 25%;
-    right: 4%;
+    margin-right: 10%;
     float: right;
 }
 .contact_image{
