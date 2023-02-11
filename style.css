@@ -6,14 +6,14 @@ body {
     margin: 0;
     background-color: #13223A;
 }
-#mainpicture {
+.slide {
     width: 100vw;
-    height: 85vh;
+    height: auto;
 }
 .menu {
     position: relative;
     margin-left: 5vw;
-    left: 5vw;
+    left: 10vw;
     top: 3vw;
     font-size: 1.5vw;
     text-decoration: none;
@@ -27,4 +27,31 @@ body {
 }
 #enroll {
     color: lawngreen;
+}
+.mainimage {
+    overflow: hidden;
+    position: relative;
+    width: 100vw;
+    height: 85vh;
+    margin-bottom: 0;
+}
+#slidebuttonleft {
+    border: none;
+    background: none;
+    font-weight: 900;
+    font-size: 5vw;
+    position: absolute;
+    top: 35vh;
+    left: 2vw;
+    color: darkgray;
+}
+#slidebuttonright {
+    border: none;
+    background: none;
+    font-weight: 900;
+    font-size: 5vw;
+    position: absolute;
+    top: 35vh;
+    right: 2vw;
+    color: darkgray;
 }
