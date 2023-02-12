@@ -1,7 +1,7 @@
 let index = 0;
 let timeout = null;
 window.onload = function(){
-    timeout = setInterval(slideShow, 4000);
+    next();
 }
 
 
