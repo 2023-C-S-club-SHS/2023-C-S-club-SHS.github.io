@@ -1,6 +1,7 @@
 let index = 0;
+let timeout = null;
 window.onload = function(){
-    slideShow();
+    timeout = setInterval(slideShow, 4000);
 }
 
 
@@ -15,6 +16,8 @@ function previous() {
         x[i].style.display = "none";
     }
     x[index - 1].style.display = "block";
+    clearInterval(timeout);
+    timeout = setInterval(slideShow, 4000);
 }
 
 function next() {
@@ -28,9 +31,10 @@ function next() {
         x[i].style.display = "none";
     }
     x[index - 1].style.display = "block";
+    clearInterval(timeout);
+    timeout = setInterval(slideShow, 4000);
 }
 
 function slideShow() {
     next()
-    setTimeout(slideShow, 6000);
 }
