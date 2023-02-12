@@ -1,16 +1,12 @@
 .menubar {
-    background-color: #13223A;
     position: relative;
     height: 100px;
     width: 100vw;
 }
 body {
+    background-color: #13223A;
     overflow-x: hidden;
     margin: 0;
-}
-.slide {
-    width: 100vw;
-    height: auto;
 }
 .menu {
     top: 35%;
@@ -30,39 +26,13 @@ body {
 #enroll {
     color: lawngreen;
 }
-.mainimage {
-    overflow: hidden;
-    position: relative;
-    width: 100vw;
-    margin-bottom: 0;
-}
-#slidebuttonleft {
-    border: none;
-    background: none;
-    font-weight: 900;
-    font-size: 5vw;
-    position: absolute;
-    top: 45%;
-    left: 2vw;
-    color: darkgray;
-}
-#slidebuttonright {
-    border: none;
-    background: none;
-    font-weight: 900;
-    font-size: 5vw;
-    position: absolute;
-    top: 45%;
-    right: 2vw;
-    color: darkgray;
-}
 .end {
     position: relative;
     width: 100vw;
     height: 100px;
-    background-color: dimgrey;
 }
 .team {
+    color: darkgray;
     position: relative;
     top: 45%;
     float: left;
@@ -77,6 +47,7 @@ body {
     float: right;
 }
 .contact_image{
+    filter: invert(62%) sepia(69%) saturate(0%) hue-rotate(137deg) brightness(97%) contrast(83%);
     width: 3vw;
     height: 3vw;
 }
