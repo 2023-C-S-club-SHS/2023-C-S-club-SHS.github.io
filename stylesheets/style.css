@@ -6,6 +6,7 @@
 body {
     background-color: #13223A;
     overflow-x: hidden;
+    font-family: Arial, sans-serif;
     margin: 0;
 }
 .menu {
@@ -16,7 +17,6 @@ body {
     text-decoration: none;
     color: white;
     font-weight: 900;
-    font-family: AppleGothic, serif;
 }
 #mainlogo {
     float: left;
@@ -38,7 +38,6 @@ body {
     float: left;
     margin-left: 10%;
     font-weight: 900;
-    font-family: AppleGothic, serif;
 }
 .contact {
     position: relative;
