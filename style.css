@@ -5,6 +5,7 @@
     width: 100vw;
 }
 body {
+    overflow-x: hidden;
     margin: 0;
 }
 .slide {

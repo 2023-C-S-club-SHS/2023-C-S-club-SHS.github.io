@@ -32,5 +32,5 @@ function next() {
 
 function slideShow() {
     next()
-    setTimeout(slideShow, 4000);
+    setTimeout(slideShow, 6000);
 }
