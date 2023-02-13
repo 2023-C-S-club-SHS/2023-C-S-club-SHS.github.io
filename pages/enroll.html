@@ -5,11 +5,16 @@
     <title>컴퓨터 과학부 지원하기</title>
     <link rel="stylesheet" href="../stylesheets/style.css"/>
     <link rel="stylesheet" href="../stylesheets/enroll.css"/>
+    <script src="../src/submit.js"></script>
+    <script src="../src/enrollcookie.js"></script>
+    <script src="../src/textcount.js"></script>
+    <script src="../src/inputcheck.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/js-cookie@3.0.1/dist/js.cookie.min.js"></script>
 </head>
 <body>
     <div class="menubar">
         <a href="../index.html"><img id="mainlogo" src="../resources/clublogo.png" alt="서울고등학교 컴퓨터 과학부"></a>
-        <a class="menu" href="../index.html">동아리 소개</a>
+        <a class="menu" href="introduce.html">동아리 소개</a>
         <a class="menu" id="enroll" href="enroll.html">지원하기</a>
     </div>
     <div class="title">
@@ -17,16 +22,24 @@
         <h1 id="title">지원하기</h1>
     </div>
     <div class="enroll">
-        <h2 class="text">저희 컴퓨터 과학부를 지원해주셔서 감사합니다!</h2>
-        <h3 class="text">지원 과정 중 모든 연락은 문자 메시지를 통해 진행됩니다. <sup class="star">*</sup>표시가 붙은 항목들은 필수 입력 항목입니다.</h3>
+        <h2 class="text">저희 컴퓨터 과학부에 지원해주셔서 감사합니다!</h2>
+        <h3 class="text">지원 과정 중 모든 연락은 문자 메시지를 통해 진행됩니다. <sup class="star">*</sup>표시가 붙은 항목들은 필수 입력 항목입니다.
+            <br><br>제출 완료후 정상 제출 확인을 위해 기장 연락처(<a href="tel:010-8343-7423">010-8343-7423</a>)로 학번과 이름을 보내주세요.</h3>
         <p class="text">학번(ex.11501)<sup class="star">*</sup></p>
-        <input type="number" id="studentid">
+        <input type="text" id="studentId" required onchange="idcheck()" pattern="\d{5}">
         <p class="text">이름(ex.홍길동)<sup class="star">*</sup></p>
-        <input type="text" id="name">
+        <input type="text" id="name" require onchange="namecheck()" pattern="[가-힣]{2,}">
         <p class="text">연락 가능한 전화번호(ex.010-0000-0000)<sup class="star">*</sup></p>
-        <input type="tel" id="tel">
-        <p class="text">1. 컴퓨터 과학부 동아리에 지원하게 된 동기를 작성해주세요.<sup class="star">*</sup></p>
-        <input class="question" type="text" id="question1">
+        <input type="tel" id="tel" required onchange="telcheck()" pattern="010-\d{4}-\d{4}">
+        <p class="text" id="question1">1. 컴퓨터 과학부 동아리에 지원하게 된 동기를 작성해주세요.<sup class="star">*</sup> <span id="count1">(0자)</span></p>
+        <div class="answer" type="text" id="answer1" required contenteditable="true" onkeydown="counttext(1)"></div>
+        <p class="text" id="question2">2. 본인이 생각하는 자신의 장점과 단점을 작성해주세요<sup class="star">*</sup> <span id="count2">(0자)</span></p>
+        <div class="answer" type="text" id="answer2" required contenteditable="true" onkeydown="counttext(2)"></div>
+        <p class="text">추가하고 싶은 파일이 있다면 아래를 통해 첨부해주세요<br><br>(파일은 5개까지, 전체 8mb 까지만 가능합니다. 대용량 파일을 보내야 한다면 기장님께 연락주세요.)<br><br>(파일 이름이 한글로 되어 있을 경우 파일 내용만 전달되며 파일 이름은 변경됩니다.)</p>
+        <input type="file" id="file" multiple onchange="checkSize()">
+        <br>
+        <button id="savebutton" onclick="saveCookie()">저장하기</button>
+        <button id="submitbutton" onclick="submit()">제출하기</button>
     </div>
     <div class="end">
         <div class="team">
