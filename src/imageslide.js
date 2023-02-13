@@ -17,7 +17,7 @@ function previous() {
     }
     x[index - 1].style.display = "block";
     clearInterval(timeout);
-    timeout = setInterval(slideShow, 4000);
+    timeout = setInterval(slideShow, 8000);
 }
 
 function next() {
@@ -32,7 +32,7 @@ function next() {
     }
     x[index - 1].style.display = "block";
     clearInterval(timeout);
-    timeout = setInterval(slideShow, 4000);
+    timeout = setInterval(slideShow, 8000);
 }
 
 function slideShow() {

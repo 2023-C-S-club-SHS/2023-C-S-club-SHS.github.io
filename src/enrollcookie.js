@@ -4,6 +4,8 @@ window.onbeforeunload = function() {
 
 window.onload = function() {
     loadCookie();
+    counttext(1);
+    counttext(2);
 }
 
 function saveCookie() {
