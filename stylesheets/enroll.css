@@ -82,3 +82,6 @@ input {
 input:invalid {
     border: 1px solid red;
 }
+#chieftel {
+    color: yellow;
+}

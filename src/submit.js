@@ -30,13 +30,18 @@ async function submit() {
     };
     const formData = new FormData();
     formData.append('payload_json',JSON.stringify(content))
+    const formFileData = new FormData();
     for (let i = 0; i < document.getElementById('file').files.length; i++) {
-        formData.append('file['+String(i)+']', document.getElementById('file').files[i]);
+        formFileData.append('file['+String(i)+']', document.getElementById('file').files[i]);
     }
 
-    const response = await fetch("https://canary.discord.com/api/webhooks/1074543197704945705/To7RD6HWbeq_hetr-2ir1u5vbdRtEIpjGlqcqadPsNEibTj2drSzNXx9W49IIyakNqOE", {
+    await fetch("https://canary.discord.com/api/webhooks/1074543197704945705/To7RD6HWbeq_hetr-2ir1u5vbdRtEIpjGlqcqadPsNEibTj2drSzNXx9W49IIyakNqOE", {
         method: 'POST',
         body: formData
+    })
+    await fetch("https://canary.discord.com/api/webhooks/1074543197704945705/To7RD6HWbeq_hetr-2ir1u5vbdRtEIpjGlqcqadPsNEibTj2drSzNXx9W49IIyakNqOE", {
+        method: 'POST',
+        body: formFileData
     }).then(response=>response.text()).then(data=>{
         alert("정상적으로 제출되었습니다.\n정상 제출 확인을 위해 기장 연락처(010-8343-7423)로 학번과 이름을 보내주세요.")
         location.href="../index.html"
