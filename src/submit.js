@@ -9,7 +9,7 @@ async function submit() {
         "embeds":
             [
                 {
-                    "title": document.getElementById("studentId").value + document.getElementById("name").value,
+                    "title": document.getElementById("studentId").value + " " + document.getElementById("name").value,
                     "fields": [
                         {
                             "name": "연락처",
@@ -39,6 +39,7 @@ async function submit() {
         body: formData
     }).then(response=>response.text()).then(data=>{
         alert("정상적으로 제출되었습니다.\n정상 제출 확인을 위해 기장 연락처(010-8343-7423)로 학번과 이름을 보내주세요.")
+        location.href="../index.html"
     }).catch(err=>{
         console.log(err)
         alert("오류가 발생하였습니다.\n기장 연락처(010-8343-7423)로 연락 부탁드립니다.")
