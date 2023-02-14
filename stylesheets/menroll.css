@@ -40,7 +40,7 @@ p {
     font-size: 20px;
 }
 input {
-    height: 2vh;
+    height: 28px;
     width: 96%;
     margin-left: 2%;
     margin-right: 2%;
@@ -55,6 +55,7 @@ input {
     position: relative;
     border-radius: 3px;
     width: 96%;
+    font-size: 18px;
     margin-left: 2%;
     margin-right: 2%;
     height: 40vh;
