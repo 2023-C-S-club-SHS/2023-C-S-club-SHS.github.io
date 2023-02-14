@@ -85,3 +85,6 @@ input:invalid {
 #chieftel {
     color: yellow;
 }
+br {
+    display: none;
+}
