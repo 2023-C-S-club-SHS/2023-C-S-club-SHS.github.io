@@ -1,6 +1,6 @@
 .background {
     color: white;
-    width: 100vw;
+    width: 100%;
     opacity: 50%;
     height: auto;
     filter: brightness(150%);
@@ -24,7 +24,7 @@
     color: white;
     height: auto;
     width: 100%;
-    margin-bottom: 5vh;
+    margin-bottom: 5%;
 }
 .text {
     position: relative;

@@ -1,13 +1,13 @@
 .slide {
-    margin-left: 7vw;
+    margin-left: 7%;
     border-radius: 20px;
-    width: 86vw;
+    width: 86%;
     height: auto;
 }
 .mainimage {
     overflow: hidden;
     position: relative;
-    width: 100vw;
+    width: 100%;
     margin-bottom: 5vh;
 }
 #slidebuttonleft {
@@ -17,7 +17,7 @@
     font-size: 5vw;
     position: absolute;
     top: 45%;
-    left: 2vw;
+    left: 2%;
     color: darkgray;
 }
 #slidebuttonright {
@@ -27,6 +27,6 @@
     font-size: 5vw;
     position: absolute;
     top: 45%;
-    right: 2vw;
+    right: 2%;
     color: darkgray;
 }
