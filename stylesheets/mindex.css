@@ -9,6 +9,7 @@
     margin-bottom: 5vh;
 }
 #slidebuttonleft {
+    display: none;
     border: none;
     background: none;
     font-weight: 900;
@@ -19,6 +20,7 @@
     color: darkgray;
 }
 #slidebuttonright {
+    display: none;
     border: none;
     background: none;
     font-weight: 900;
