@@ -8,7 +8,7 @@
 .title {
     position: relative;
     overflow: hidden;
-    height: 30vh;
+    height: 20vh;
 }
 #title {
     position: absolute;
@@ -24,10 +24,10 @@
     color: white;
     height: auto;
     width: 100vw;
+    margin-bottom: 5vh;
 }
 .text {
     position: relative;
-    left: 15%;
 }
 .star {
     color: red;
@@ -36,7 +36,6 @@
 input {
     height: 2vh;
     position: relative;
-    left: 15%;
     border: 0;
     background-color: lightgray;
     border-radius: 3px;
@@ -45,7 +44,6 @@ input {
     background-color: lightgray;
     position: relative;
     border-radius: 3px;
-    left: 15%;
     width: 70vw;
     height: 40vh;
     overflow-y: scroll;
