@@ -9,8 +9,22 @@
     margin-bottom: 5vh;
 }
 #slidebuttonleft {
-    display: none;
+    border: none;
+    background: none;
+    font-weight: 900;
+    font-size: 5vw;
+    position: absolute;
+    top: 45%;
+    left: 2vw;
+    color: darkgray;
 }
 #slidebuttonright {
-    display: none;
+    border: none;
+    background: none;
+    font-weight: 900;
+    font-size: 5vw;
+    position: absolute;
+    top: 45%;
+    right: 2vw;
+    color: darkgray;
 }
