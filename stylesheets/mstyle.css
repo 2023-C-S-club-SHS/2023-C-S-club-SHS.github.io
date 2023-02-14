@@ -28,19 +28,18 @@ body {
 .end {
     position: relative;
     width: 100vw;
+    height: auto;
 }
 .team {
     color: darkgray;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
+    position: relative;
     font-weight: 900;
     width: 100vw;
     text-align: center;
     font-size: 2.5vh;
 }
 .contact {
-    position: absolute;
+    position: relative;
     margin-top: 3vh;
     width: 100vw;
     height: 5vh;
@@ -50,8 +49,17 @@ body {
     height: 4vh;
 }
 .contacta {
-    position: relative;
-    margin-left: 1vw;
-    left: 35%;
-    transform: translate(-50%);
+    position: absolute;
+}
+#github {
+    left: 50%;
+    transform: translateX(-50%);
+}
+#instagram {
+    left: 40%;
+    transform: translateX(-40%);
+}
+#email {
+    left: 60%;
+    transform: translateX(-60%);
 }

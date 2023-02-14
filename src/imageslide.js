@@ -1,7 +1,9 @@
 let index = 0;
 let timeout = null;
 window.onload = function(){
-    next();
+    if (matchMedia('(min-width: 1025px)').matches) {
+        next();
+    }
 }
 
 
