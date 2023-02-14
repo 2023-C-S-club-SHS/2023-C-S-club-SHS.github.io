@@ -1,6 +1,6 @@
 .menubar {
     position: relative;
-    height: 100px;
+    height: 10vh;
     width: 100vw;
 }
 body {
@@ -13,14 +13,14 @@ body {
     top: 35%;
     position: relative;
     margin-left: 4vw;
-    font-size: 1.5vw;
+    font-size: 3vh;
     text-decoration: none;
     color: white;
     font-weight: 900;
 }
 #mainlogo {
     float: left;
-    height: 100px;
+    height: 10vh;
 }
 #enroll {
     color: lawngreen;
@@ -28,29 +28,30 @@ body {
 .end {
     position: relative;
     width: 100vw;
-    height: 100px;
 }
 .team {
     color: darkgray;
-    position: relative;
+    position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    float: left;
-    margin-left: 10%;
     font-weight: 900;
+    width: 100vw;
+    text-align: center;
+    font-size: 2.5vh;
 }
 .contact {
-    position: relative;
-    top: 50%;
-    transform: translateY(-50%);
-    margin-right: 10%;
-    float: right;
+    position: absolute;
+    margin-top: 3vh;
+    width: 100vw;
+    height: 5vh;
 }
 .contact_image{
     filter: invert(62%) sepia(69%) saturate(0%) hue-rotate(137deg) brightness(97%) contrast(83%);
-    width: 3vw;
-    height: 3vw;
+    height: 4vh;
 }
 .contacta {
+    position: relative;
     margin-left: 1vw;
+    left: 40%;
+    transform: translate(-50%);
 }
