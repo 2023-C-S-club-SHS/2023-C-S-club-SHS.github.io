@@ -35,7 +35,7 @@ function telcheck() {
     }
 }
 
-function checkSize() {
+function filecheck() {
     let input = document.getElementById("file");
     if (input.files.length > 5) {
         alert("파일은 5개까지만 업로드 가능합니다.");
@@ -50,4 +50,16 @@ function checkSize() {
         }
     }
     return true;
+}
+
+function questioncheck() {
+    let input1 = document.getElementById("answer1");
+    let input2 = document.getElementById("answer2");
+    if (input1.innerText.length > 0 && input2.innerText.length > 0) {
+        return true;
+    }
+    else {
+        alert("답변을 모두 작성해주세요.");
+        return false;
+    }
 }

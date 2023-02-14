@@ -37,7 +37,7 @@
         <p class="text" id="question2">2. 본인이 생각하는 자신의 장점과 단점을 작성해주세요<sup class="star">*</sup> <span id="count2">(0자)</span></p>
         <div class="answer" type="text" id="answer2" required contenteditable="true" onkeydown="counttext(2)"></div>
         <p class="text">추가하고 싶은 파일이 있다면 아래를 통해 첨부해주세요<br><br>(파일은 5개까지, 전체 8mb 까지만 가능합니다. 대용량 파일을 보내야 한다면 기장님께 연락주세요.)<br><br>(파일 이름이 한글로 되어 있을 경우 파일 내용만 전달되며 파일 이름은 변경됩니다.)</p>
-        <input type="file" id="file" multiple onchange="checkSize()">
+        <input type="file" id="file" multiple onchange="filecheck()">
         <br>
         <button id="savebutton" onclick="saveCookie()">저장하기</button>
         <button id="submitbutton" onclick="submit()">제출하기</button>

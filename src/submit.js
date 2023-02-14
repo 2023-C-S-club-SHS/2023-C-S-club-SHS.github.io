@@ -1,5 +1,5 @@
 async function submit() {
-    if (idcheck() && namecheck() && telcheck() && checkSize()) {
+    if (idcheck() && namecheck() && telcheck() && filecheck() && questioncheck()) {
 
     }
     else {
