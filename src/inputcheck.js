@@ -25,11 +25,11 @@ function namecheck() {
 
 function telcheck() {
     let input = document.getElementById("tel");
-    if (/010-\d{4}-\d{4}/.test(input.value) && input.value.length === 13) {
+    if (/010\d{4}\d{4}/.test(input.value) && input.value.length === 11) {
         return true;
     }
     else {
-        alert("연락처는 휴대전화번호(010-0000-0000)으로 입력해주세요.");
+        alert("연락처는 휴대전화번호(01000000000)으로 입력해주세요.");
         input.value = null;
         return false;
     }
@@ -55,11 +55,15 @@ function filecheck() {
 function questioncheck() {
     let input1 = document.getElementById("answer1");
     let input2 = document.getElementById("answer2");
-    if (input1.innerText.length > 0 && input2.innerText.length > 0) {
-        return true;
+    if (input1.innerText.length <= 0) {
+        alert("1번 문항을 작성해주세요.");
+        return false;
+    }
+    else if (input2.innerText.length <= 0) {
+        alert("2번 문항을 작성해주세요.");
+        return false;
     }
     else {
-        alert("답변을 모두 작성해주세요.");
-        return false;
+        return true;
     }
 }

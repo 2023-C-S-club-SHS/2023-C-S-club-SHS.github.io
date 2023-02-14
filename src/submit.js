@@ -5,6 +5,13 @@ async function submit() {
     else {
         return;
     }
+    let tel = "";
+    for (let i = 0; i < 11; i++) {
+        if (i === 3 || i === 7) {
+            tel += "-";
+        }
+        tel += document.getElementById("tel").value[i];
+    }
     let content = {
         "embeds":
             [
@@ -13,10 +20,10 @@ async function submit() {
                     "fields": [
                         {
                             "name": "연락처",
-                            "value": document.getElementById("tel").value
+                            "value": tel
                         },
                         {
-                            "name": "1. 컴퓨터 과학부 동아리에 지원하게 된 동기를 작성해주세요",
+                            "name": "1. 컴퓨터 과학부에 지원하게 된 동기를 작성해주세요",
                             "value": "```" + document.getElementById("answer1").innerText + "```"
                         },
                         {
