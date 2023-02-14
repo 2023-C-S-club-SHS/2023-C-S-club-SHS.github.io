@@ -1,7 +1,5 @@
 .slide {
-    margin-left: 7vw;
-    border-radius: 20px;
-    width: 86vw;
+    width: 100vw;
     height: auto;
 }
 .mainimage {
@@ -11,22 +9,8 @@
     margin-bottom: 5vh;
 }
 #slidebuttonleft {
-    border: none;
-    background: none;
-    font-weight: 900;
-    font-size: 5vw;
-    position: absolute;
-    top: 45%;
-    left: 2vw;
-    color: darkgray;
+    display: none;
 }
 #slidebuttonright {
-    border: none;
-    background: none;
-    font-weight: 900;
-    font-size: 5vw;
-    position: absolute;
-    top: 45%;
-    right: 2vw;
-    color: darkgray;
+    display: none;
 }
