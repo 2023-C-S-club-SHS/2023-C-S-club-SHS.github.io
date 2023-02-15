@@ -88,3 +88,6 @@ input:invalid {
 br {
     display: none;
 }
+#agree {
+    left: 2%;
+}

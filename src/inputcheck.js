@@ -67,3 +67,14 @@ function questioncheck() {
         return true;
     }
 }
+
+function agreecheck() {
+let input = document.getElementById("agree");
+    if (input.checked) {
+        return true;
+    }
+    else {
+        alert("개인정보 수집 및 이용에 동의해주세요.");
+        return false;
+    }
+}

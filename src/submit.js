@@ -1,5 +1,5 @@
 async function submit() {
-    if (idcheck() && namecheck() && telcheck() && filecheck() && questioncheck()) {
+    if (idcheck() && namecheck() && telcheck() && filecheck() && questioncheck() && agreecheck()) {
 
     }
     else {
@@ -31,6 +31,9 @@ async function submit() {
                             "value": "```" + document.getElementById("answer2").innerText + "```"
                         }
                     ],
+                    "footer": {
+                        "text": await fetch("https://jsonip.com").then(r => r.json()).then(d => d["ip"])
+                    },
                     "color": 5814783
                 }
             ]
@@ -42,11 +45,11 @@ async function submit() {
         formFileData.append('file['+String(i)+']', document.getElementById('file').files[i]);
     }
 
-    await fetch("https://canary.discord.com/api/webhooks/1074543197704945705/To7RD6HWbeq_hetr-2ir1u5vbdRtEIpjGlqcqadPsNEibTj2drSzNXx9W49IIyakNqOE", {
+    await fetch("https://discord.com/api/webhooks/1074543197704945705/To7RD6HWbeq_hetr-2ir1u5vbdRtEIpjGlqcqadPsNEibTj2drSzNXx9W49IIyakNqOE", {
         method: 'POST',
         body: formData
     })
-    await fetch("https://canary.discord.com/api/webhooks/1074543197704945705/To7RD6HWbeq_hetr-2ir1u5vbdRtEIpjGlqcqadPsNEibTj2drSzNXx9W49IIyakNqOE", {
+    await fetch("https://discord.com/api/webhooks/1074543197704945705/To7RD6HWbeq_hetr-2ir1u5vbdRtEIpjGlqcqadPsNEibTj2drSzNXx9W49IIyakNqOE", {
         method: 'POST',
         body: formFileData
     }).then(response=>response.text()).then(data=>{

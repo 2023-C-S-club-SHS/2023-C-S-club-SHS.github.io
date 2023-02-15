@@ -102,3 +102,7 @@ input:invalid {
 .team {
     font-size: 2vh;
 }
+#agree {
+    left: 2%;
+    width: auto;
+}
