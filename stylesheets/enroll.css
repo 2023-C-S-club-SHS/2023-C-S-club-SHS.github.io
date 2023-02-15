@@ -55,7 +55,7 @@ input {
 }
 #submitbutton {
     position: relative;
-    left: 65%;
+    left: 55%;
     background-color: pink;
     border-radius: 50px;
     border: 0;
@@ -66,9 +66,22 @@ input {
     margin-top: 2vh;
     margin-bottom: 3vh;
 }
+#erasebutton {
+    position: relative;
+    left: 53%;
+    background-color: greenyellow;
+    border-radius: 50px;
+    border: 0;
+    font-size: 2.2vh;
+    height: 5vh;
+    width: 10%;
+    margin-top: 2vh;
+    margin-bottom: 3vh;
+    color: black;
+}
 #savebutton {
     position: relative;
-    left: 64%;
+    left: 54%;
     background-color: skyblue;
     border-radius: 50px;
     border: 0;

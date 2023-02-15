@@ -68,16 +68,28 @@ input {
 #submitbutton {
     position: relative;
     float: right;
-    margin-right: 5%;
+    margin-right: 3%;
     background-color: pink;
     border-radius: 50px;
     border: 0;
     color: black;
     font-size: 2.5vh;
     height: 5vh;
-    width: 40%;
+    width: 30%;
     margin-top: 4vh;
     margin-bottom: 5vh;
+}
+#erasebutton {
+    position: relative;
+    float: inside;
+    background-color: greenyellow;
+    border-radius: 50px;
+    border: 0;
+    color: black;
+    font-size: 2.5vh;
+    height: 5vh;
+    width: 30%;
+    margin: 4vh 2% 5vh;
 }
 #savebutton {
     position: relative;
@@ -88,8 +100,8 @@ input {
     color: black;
     font-size: 2.5vh;
     height: 5vh;
-    width: 40%;
-    margin-left: 5%;
+    width: 30%;
+    margin-left: 3%;
     margin-top: 4vh;
     margin-bottom: 5vh;
 }

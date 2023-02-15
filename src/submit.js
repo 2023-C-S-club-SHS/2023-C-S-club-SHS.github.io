@@ -5,6 +5,12 @@ async function submit() {
     else {
         return;
     }
+    if (confirm("정말로 제출하시겠습니까?")) {
+
+    }
+    else {
+        return false;
+    }
     let tel = "";
     for (let i = 0; i < 11; i++) {
         if (i === 3 || i === 7) {
