@@ -31,12 +31,12 @@
         <h3 class="text">지원 과정 중 모든 연락은 문자 메시지를 통해 진행됩니다.</h3>
         <h3 class="text">제출 완료후 정상 제출 확인을 위해 <br><br>기장 휴대전화(<a href="tel:010-8343-7423" id="chieftel">010-8343-7423</a>)로 학번과 이름을 보내주세요.</h3>
         <h4 class="text"><sup class="star">*</sup>표시가 붙은 항목들은 필수 입력 항목입니다.</h4>
-        <p class="text">학번(ex.11501)<sup class="star">*</sup></p>
-        <input type="tel" id="studentId" required onchange="idcheck()" pattern="\d{5}">
-        <p class="text">이름(ex.홍길동)<sup class="star">*</sup></p>
-        <input type="text" id="name" required onchange="namecheck()" pattern="[가-힣]{2,}">
-        <p class="text">연락 가능한 휴대전화번호(ex.01000000000)<sup class="star">*</sup></p>
-        <input type="tel" id="tel" required onchange="telcheck()" pattern="010\d{4}\d{4}">
+        <p class="text">학번<sup class="star">*</sup></p>
+        <input type="tel" id="studentId" required onchange="idcheck()" pattern="\d{5}" placeholder="ex) 11501">
+        <p class="text">이름<sup class="star">*</sup></p>
+        <input type="text" id="name" required onchange="namecheck()" pattern="[가-힣]{2,}" placeholder="ex) 홍길동">
+        <p class="text">연락 가능한 휴대전화번호<sup class="star">*</sup></p>
+        <input type="tel" id="tel" required onchange="telcheck()" pattern="010\d{4}\d{4}" placeholder="ex) 01000000000">
         <p class="text" id="question1">1. 컴퓨터 과학부에 지원하게 된 동기를 작성해주세요.<sup class="star">*</sup> <span id="count1">(0자)</span></p>
         <div class="answer" type="text" id="answer1" required contenteditable="true" onkeydown="counttext(1)"></div>
         <p class="text" id="question2">2. 본인이 생각하는 자신의 장점과 단점을 작성해주세요<sup class="star">*</sup> <span id="count2">(0자)</span></p>
