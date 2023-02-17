@@ -47,3 +47,11 @@ window.addEventListener("resize", () => {
     next();
     previous();
 });
+
+window.onkeydown = function(e) {
+    if (e.key === 'ArrowLeft') {
+        previous();
+    } else if (e.key === 'ArrowRight') {
+        next();
+    }
+}
