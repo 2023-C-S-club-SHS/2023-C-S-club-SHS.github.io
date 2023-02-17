@@ -35,7 +35,7 @@ function previous() {
     paginationItems.forEach((i) => i.classList.remove("active"));
     paginationItems[currSlide - 1].classList.add("active");
     clearInterval(timeout);
-    timeout = setInterval(next, 6000);
+    timeout = setInterval(next, 8000);
 }
 
 function next() {
@@ -52,7 +52,7 @@ function next() {
     paginationItems.forEach((i) => i.classList.remove("active"));
     paginationItems[currSlide - 1].classList.add("active");
     clearInterval(timeout);
-    timeout = setInterval(next, 6000);
+    timeout = setInterval(next, 8000);
 }
 
 window.addEventListener("resize", () => {
@@ -78,5 +78,7 @@ for (let i = 0; i < maxSlide; i++) {
         });
         paginationItems.forEach((i) => i.classList.remove("active"));
         paginationItems[currSlide - 1].classList.add("active");
+        clearInterval(timeout);
+        timeout = setInterval(next, 8000);
     });
 }
