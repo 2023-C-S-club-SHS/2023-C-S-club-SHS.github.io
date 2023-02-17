@@ -9,7 +9,6 @@
     <link rel="stylesheet" media="(max-width: 1025px)" href="stylesheets/mstyle.css">
     <link rel="stylesheet" media="(min-width: 1025px)" href="stylesheets/index.css"/>
     <link rel="stylesheet" media="(max-width: 1025px)" href="stylesheets/mindex.css">
-    <script src="src/imageslide.js"></script>
 </head>
 <body>
 
@@ -20,9 +19,11 @@
         <a class="menu" id="enroll" href="pages/enroll.html">지원하기</a>
     </div>
     <div class="mainimage">
-        <img class="slide" src="resources/groupphoto.jpeg">
-        <img class="slide" src="resources/working1.jpeg">
-        <img class="slide" src="resources/working2.jpeg">
+        <div class="images">
+            <img class="slide" id="first" src="resources/groupphoto.jpeg">
+            <img class="slide" id="second" src="resources/working1.jpeg">
+            <img class="slide" id="third" src="resources/working2.jpeg">
+        </div>
         <button id="slidebuttonleft" onclick="previous()"><</button>
         <button id="slidebuttonright" onclick="next()">></button>
     </div>
@@ -36,4 +37,5 @@
             <a class="contacta" href="mailto:seoulcsclub@gmail.com" id="email"><img class="contact_image" src="https://cdn.jsdelivr.net/npm/simple-icons@v8/icons/gmail.svg"/></a>
         </div>
     </div>
+    <script src="src/imageslide.js"></script>
 </html>

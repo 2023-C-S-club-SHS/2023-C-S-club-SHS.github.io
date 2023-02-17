@@ -1,8 +1,20 @@
 .slide {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 100%;
+    flex-shrink: 0;
+    transition: left 1s;
+}
+.images {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow: hidden;
+    position: relative;
+    width: 86%;
     margin-left: 7%;
     border-radius: 20px;
-    width: 86%;
-    height: auto;
 }
 .mainimage {
     overflow: hidden;

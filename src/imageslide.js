@@ -1,42 +1,49 @@
-let index = 0;
+const slide = document.querySelector('.images')
+const slideItems = document.querySelectorAll('.slide')
+const maxSlide = slideItems.length;
+let currSlide = 1;
 let timeout = null;
+let slideWidth = 0;
+
 window.onload = function(){
     if (matchMedia('(min-width: 1025px)').matches) {
+        slideWidth = slide.clientWidth;
         next();
     }
 }
 
-
 function previous() {
-    const x = document.getElementsByClassName("slide");
-    let i;
-    index--;
-    if (index <= 0) {
-        index = x.length;
+    currSlide--;
+    if (currSlide > 0) {
+
+    } else {
+        currSlide = maxSlide;
     }
-    for (i = 0; i < x.length; i++) {
-        x[i].style.display = "none";
-    }
-    x[index - 1].style.display = "block";
+    const offset = slideWidth * (currSlide - 1);
+    slideItems.forEach((i) => {
+        i.setAttribute("style", `left: ${-offset}px`);
+    });
     clearInterval(timeout);
-    timeout = setInterval(slideShow, 8000);
+    timeout = setInterval(next, 6000);
 }
 
 function next() {
-    const x = document.getElementsByClassName("slide");
-    let i;
-    index++;
-    if (index > x.length) {
-        index = 1;
+    currSlide++;
+    if (currSlide <= maxSlide) {
+
+    } else {
+        currSlide = 1;
     }
-    for (i = 0; i < x.length; i++) {
-        x[i].style.display = "none";
-    }
-    x[index - 1].style.display = "block";
+    const offset = slideWidth * (currSlide - 1);
+    slideItems.forEach((i) => {
+        i.setAttribute("style", `left: ${-offset}px`);
+    });
     clearInterval(timeout);
-    timeout = setInterval(slideShow, 8000);
+    timeout = setInterval(next, 6000);
 }
 
-function slideShow() {
-    next()
-}
+window.addEventListener("resize", () => {
+    slideWidth = slide.clientWidth;
+    next();
+    previous();
+});
