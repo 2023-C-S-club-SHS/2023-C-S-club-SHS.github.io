@@ -30,3 +30,6 @@
     right: 2vw;
     color: darkgray;
 }
+ul {
+    display: none;
+}

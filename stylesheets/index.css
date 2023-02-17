@@ -42,3 +42,26 @@
     right: 2%;
     color: darkgray;
 }
+
+ul,
+li {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+.slide_pagination {
+    display: flex;
+    gap: 5px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.slide_pagination > li {
+    color: green;
+    cursor: pointer;
+    font-size: 4vw;
+}
+.slide_pagination > li.active {
+    color: greenyellow;
+}
