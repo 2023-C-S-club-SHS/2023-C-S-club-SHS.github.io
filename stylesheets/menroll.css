@@ -40,11 +40,11 @@ p {
     font-size: 20px;
 }
 input {
-    height: 100px;
+    height: 34px;
     width: 96%;
     margin-left: 2%;
     margin-right: 2%;
-    font-size: 18px;
+    font-size: 14px;
     position: relative;
     border: 0;
     background-color: lightgray;
