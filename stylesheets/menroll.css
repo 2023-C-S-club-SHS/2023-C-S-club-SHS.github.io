@@ -29,8 +29,9 @@
 .text {
     position: relative;
     left: 2%;
-    font-size: 3.3vw;
+    font-size: 4vw;
     margin-block: 0.6em;
+    right: 2%;
 }
 p {
     text-align: left;
@@ -49,6 +50,7 @@ input {
     border: 0;
     background-color: lightgray;
     border-radius: 3px;
+    padding-left: 10px;
 }
 .answer {
     background-color: lightgray;
@@ -64,6 +66,7 @@ input {
     border-color: lightgray;
     color: black;
     text-align: left;
+    padding: 10px;
 }
 #submitbutton {
     position: relative;
@@ -115,6 +118,9 @@ input:invalid {
     font-size: 2vh;
 }
 #agree {
-    left: 2%;
+    position: absolute;
     width: auto;
+}
+span {
+    display: block;
 }
