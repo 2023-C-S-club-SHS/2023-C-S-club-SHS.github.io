@@ -42,7 +42,7 @@ p {
 }
 input {
     height: 34px;
-    width: 93%;
+    width: 92%;
     margin-left: 2%;
     font-size: 14px;
     position: relative;
@@ -55,7 +55,7 @@ input {
     background-color: lightgray;
     position: relative;
     border-radius: 3px;
-    width: 92%;
+    width: 90%;
     font-size: 18px;
     margin-left: 2%;
     height: 40vh;
