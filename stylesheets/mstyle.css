@@ -62,11 +62,11 @@ body {
     transform: translateX(-50%);
 }
 #instagram {
-    left: 40%;
+    left: 35%;
     transform: translateX(-40%);
 }
 #email {
-    left: 60%;
+    left: 65%;
     transform: translateX(-60%);
 }
 #easteregg {
