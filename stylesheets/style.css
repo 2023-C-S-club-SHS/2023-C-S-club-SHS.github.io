@@ -55,3 +55,30 @@ body {
 .contacta {
     margin-left: 1vw;
 }
+#easteregg {
+    border: 0;
+    background: none;
+    font-size: inherit;
+    color: inherit;
+    font-family: inherit;
+    font-weight: inherit;
+}
+.bonobono {
+    position: absolute;
+    display: none;
+    width: 30%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.bonobono_image {
+    width: 30%;
+    animation: rotate_img 600ms linear infinite;
+}
+.bonobono_image:last-child {
+    margin-left: 38%;
+}
+@keyframes rotate_img {
+    100% {
+        transform: rotate(360deg);
+    }
+}

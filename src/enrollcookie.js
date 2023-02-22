@@ -1,11 +1,23 @@
 window.onbeforeunload = function() {
-    saveCookie();
+    if (location.href.includes("enroll.html")) {
+        saveCookie();
+    }
+    saveEasteregg();
 }
 
 window.onload = function() {
-    loadCookie();
-    counttext(1);
-    counttext(2);
+    if (location.href.includes("enroll.html")) {
+        loadCookie();
+        counttext(1);
+        counttext(2);
+    }
+    loadEasteregg();
+    if (location.href.includes("index.html")) {
+        if (matchMedia('(min-width: 1025px)').matches) {
+            slideWidth = slide.clientWidth;
+            next();
+        }
+    }
 }
 
 function saveCookie() {
@@ -45,4 +57,15 @@ function eraseCookie() {
     counttext(1)
     counttext(2)
     alert("정상적으로 삭제되었습니다.")
+}
+
+function saveEasteregg() {
+    Cookies.set('easteregg', String((document.getElementById("enroll").style.color === "purple")))
+}
+
+function loadEasteregg() {
+    if (Cookies.get('easteregg') === "true") {
+        click = 10;
+        easteregg2();
+    }
 }

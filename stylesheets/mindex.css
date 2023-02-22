@@ -33,3 +33,10 @@
 ul {
     display: none;
 }
+#imgeasteregg {
+    border: none;
+    background-color: rgba(0, 0, 0, 0);
+    display: none;
+    width: 100%;
+    padding: 0;
+}
