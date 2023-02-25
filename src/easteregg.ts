@@ -38,7 +38,7 @@ function easteregg2() {
     body.style.backgroundImage = "url('resources/easteregg1.jpeg')";
     body.style.backgroundImage = "url('../resources/easteregg1.jpeg')";
     document.getElementById('enroll')!.style.color = "purple";
-    document.getElementsByName('bonobono')[0].style.display = "block";
+    (document.getElementsByClassName('bonobono') as HTMLCollectionOf<HTMLElement>)[0].style.display = "block";
 }
 
 function easteregg3() {
@@ -56,5 +56,5 @@ function easteregg4() {
     body.style.backgroundImage = "none";
     body.style.backgroundColor = "#0f223c"
     document.getElementById('enroll')!.style.color = "lawngreen";
-    document.getElementsByName('bonobono')[0].style.display = "none";
+    (document.getElementsByClassName('bonobono') as HTMLCollectionOf<HTMLElement>)[0].style.display = "none";
 }
