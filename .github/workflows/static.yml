@@ -37,9 +37,6 @@ jobs:
           echo "let url: string = '$WEBHOOK_URL'" | cat - src/submitb.ts > src/submit.ts
           rm src/submitb.ts
       - name: Build Typescript
-        uses: actions/setup-node@v2
-        with:
-          node-version: '14'
         run: |
           npm install
           tsc
