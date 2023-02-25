@@ -11,18 +11,19 @@ async function submit() {
     else {
         return false;
     }
-    let tel = "";
+    let tel: string = "";
     for (let i = 0; i < 11; i++) {
         if (i === 3 || i === 7) {
             tel += "-";
         }
-        tel += document.getElementById("tel").value[i];
+        tel += (document.getElementById("tel") as HTMLInputElement).value[i];
     }
     let content = {
         "embeds":
             [
                 {
-                    "title": document.getElementById("studentId").value + " " + document.getElementById("name").value,
+                    "title": (document.getElementById("studentId") as HTMLInputElement).value
+                        + " " + (document.getElementById("name") as HTMLInputElement).value,
                     "fields": [
                         {
                             "name": "연락처",
@@ -30,11 +31,11 @@ async function submit() {
                         },
                         {
                             "name": "1. 컴퓨터 과학부에 지원하게 된 동기를 작성해주세요",
-                            "value": "```" + document.getElementById("answer1").innerText + "```"
+                            "value": "```" + document.getElementById("answer1")?.innerText + "```"
                         },
                         {
                             "name": "2. 본인이 생각하는 자신의 장점과 단점을 작성해주세요",
-                            "value": "```" + document.getElementById("answer2").innerText + "```"
+                            "value": "```" + document.getElementById("answer2")?.innerText + "```"
                         }
                     ],
                     "footer": {
@@ -47,8 +48,8 @@ async function submit() {
     const formData = new FormData();
     formData.append('payload_json',JSON.stringify(content))
     const formFileData = new FormData();
-    for (let i = 0; i < document.getElementById('file').files.length; i++) {
-        formFileData.append('file['+String(i)+']', document.getElementById('file').files[i]);
+    for (let i = 0; i < (document.getElementById('file') as HTMLInputElement).files!.length; i++) {
+        formFileData.append('file['+String(i)+']', ((document.getElementById('file') as HTMLInputElement).files as FileList)[i]);
     }
 
     await fetch(url, {
@@ -58,7 +59,7 @@ async function submit() {
     await fetch(url, {
         method: 'POST',
         body: formFileData
-    }).then(response=>response.text()).then(data=>{
+    }).then(response=>response.text()).then(()=>{
         alert("정상적으로 제출되었습니다.\n정상 제출 확인을 위해 기장 연락처(010-8343-7423)로 학번과 이름을 보내주세요.")
         location.href="../index.html"
     }).catch(err=>{

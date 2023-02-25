@@ -1,11 +1,11 @@
-let click = 0;
+let click: number = 0;
 
 function on_click() {
     click++;
     if (click % 20 === 10) {
         if (location.href.includes("index.html")) {
             if (matchMedia("(max-width: 1025px)").matches) {
-                document.getElementById("imgeasteregg").style.display = "block";
+                document.getElementById("imgeasteregg")!.style.display = "block";
             } else {
                 easteregg1();
             }
@@ -14,7 +14,7 @@ function on_click() {
     else if (click % 20 === 0) {
         if (location.href.includes("index.html")) {
             if (matchMedia("(max-width: 1025px)").matches) {
-                document.getElementById("imgeasteregg").style.display = "none";
+                document.getElementById("imgeasteregg")!.style.display = "none";
             } else {
                 easteregg3();
             }
@@ -34,11 +34,11 @@ function easteregg1() {
 }
 
 function easteregg2() {
-    let body = document.querySelector('body');
+    let body = document.querySelector('body') as HTMLElementTagNameMap["body"];
     body.style.backgroundImage = "url('resources/easteregg1.jpeg')";
     body.style.backgroundImage = "url('../resources/easteregg1.jpeg')";
-    document.getElementById('enroll').style.color = "purple";
-    document.getElementsByClassName('bonobono')[0].style.display = "block";
+    document.getElementById('enroll')!.style.color = "purple";
+    document.getElementsByName('bonobono')[0].style.display = "block";
 }
 
 function easteregg3() {
@@ -52,9 +52,9 @@ function easteregg3() {
 }
 
 function easteregg4() {
-    let body = document.querySelector('body');
+    let body = document.querySelector('body') as HTMLElementTagNameMap["body"];
     body.style.backgroundImage = "none";
     body.style.backgroundColor = "#0f223c"
-    document.getElementById('enroll').style.color = "lawngreen";
-    document.getElementsByClassName('bonobono')[0].style.display = "none";
+    document.getElementById('enroll')!.style.color = "lawngreen";
+    document.getElementsByName('bonobono')[0].style.display = "none";
 }

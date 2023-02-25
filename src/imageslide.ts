@@ -1,11 +1,11 @@
-const slide = document.querySelector('.images')
-let slideItems = document.querySelectorAll('.slide')
-let maxSlide = slideItems.length - 1;
-let currSlide = 1;
-let timeout = null;
-let slideWidth = 0;
+const slide = document.querySelector('.images') as Element;
+let slideItems = document.querySelectorAll('.slide') as NodeListOf<Element>;
+let maxSlide: number = slideItems.length - 1;
+let currSlide: number = 1;
+let timeout: ReturnType<typeof setInterval>;
+let slideWidth: number = 0;
 
-const pagination = document.querySelector(".slide_pagination");
+const pagination = document.querySelector(".slide_pagination") as Element;
 
 function create_pagination() {
     pagination.innerHTML = "";
@@ -17,7 +17,7 @@ function create_pagination() {
 
 create_pagination();
 
-let paginationItems = document.querySelectorAll(".slide_pagination > li");
+let paginationItems: NodeListOf<Element> = document.querySelectorAll(".slide_pagination > li");
 
 function previous() {
     currSlide--;
@@ -26,7 +26,7 @@ function previous() {
     } else {
         currSlide = maxSlide;
     }
-    const offset = slideWidth * (currSlide - 1);
+    const offset: number = slideWidth * (currSlide - 1);
     slideItems.forEach((i) => {
         i.setAttribute("style", `left: ${-offset}px`);
     });
@@ -43,7 +43,7 @@ function next() {
     } else {
         currSlide = 1;
     }
-    const offset = slideWidth * (currSlide - 1);
+    const offset: number = slideWidth * (currSlide - 1);
     slideItems.forEach((i) => {
         i.setAttribute("style", `left: ${-offset}px`);
     });
@@ -72,7 +72,7 @@ function addpaginationevent() {
         paginationItems[i].removeEventListener("click", () => {});
         paginationItems[i].addEventListener("click", () => {
             currSlide = i + 1;
-            const offset = slideWidth * (currSlide - 1);
+            const offset: number = slideWidth * (currSlide - 1);
             slideItems.forEach((i) => {
                 i.setAttribute("style", `left: ${-offset}px`);
             });

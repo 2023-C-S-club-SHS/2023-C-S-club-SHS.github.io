@@ -40,7 +40,7 @@
         <input type="tel" id="studentId" required onchange="idcheck()" pattern="\d{5}" placeholder="ex) 11501">
         <p class="text">이름<sup class="star">*</sup></p>
         <input type="text" id="name" required onchange="namecheck()" pattern="[가-힣]{2,}" placeholder="ex) 홍길동">
-        <p class="text">연락 가능한 휴대전화번호<sup class="star">*</sup></p>
+        <p class="text">연락 가능한 휴대전화번호('-' 없이)<sup class="star">*</sup></p>
         <input type="tel" id="tel" required onchange="telcheck()" pattern="010\d{4}\d{4}" placeholder="ex) 01000000000">
         <p class="text" id="question1">1. 컴퓨터 과학부에 지원하게 된 동기를 작성해주세요.<sup class="star">*</sup> <span id="count1">(0자)</span></p>
         <div class="answer" id="answer1" contenteditable="true" onkeydown="counttext(1)"></div>
@@ -70,7 +70,7 @@
         </div>
     </div>
     <script src="../src/submit.js"></script>
-    <script src="../src/enrollcookie.js"></script>
+    <script src="../src/enrollcookie.ts"></script>
     <script src="../src/easteregg.js"></script>
     <script src="../src/textcount.js"></script>
     <script src="../src/inputcheck.js"></script>

@@ -34,7 +34,15 @@ jobs:
         env:
           WEBHOOK_URL: ${{ secrets.WEBHOOK_URL }}
         run: |
-          echo "let url = '$WEBHOOK_URL'" | cat - src/submitb.js >src/submit.js
+          echo "let url: string = '$WEBHOOK_URL'" | cat - src/submitb.ts > src/submit.ts
+          rm src/submitb.ts
+      - name: Build Typescript
+        uses: actions/setup-node@v2
+        with:
+          node-version: '14'
+        run: |
+          npm install
+          tsc
       - name: Setup Pages
         uses: actions/configure-pages@v3
       - name: Upload artifact
