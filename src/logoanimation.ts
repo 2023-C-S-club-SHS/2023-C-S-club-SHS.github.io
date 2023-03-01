@@ -30,5 +30,4 @@ function animation() {
         interval = setInterval(animation, 1);
     }
     Scroll++;
-    console.log(scale);
 }
