@@ -16,7 +16,11 @@ function animation() {
     const scale: number = 1 - Scroll / 200;
     const margin: number = document.getElementsByTagName('body')[0].clientWidth * 0.1;
     logo.style.width = (scale * 10 * margin + 100).toString() + "px";
-    logo.style.left = (Scroll / 1000 + margin).toString() + "px";
+    if (matchMedia('(min-width: 1025px)').matches) {
+        logo.style.left = (Scroll / 1000 + margin).toString() + "px";
+    } else {
+        logo.style.left = (Scroll / 1000).toString() + "px";
+    }
     logo.style.rotate = (scale * 360 + 1.2).toString() + "deg";
     rpm += rpms;
     if (logo.clientWidth < 100) {

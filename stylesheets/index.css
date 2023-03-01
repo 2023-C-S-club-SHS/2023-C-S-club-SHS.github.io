@@ -1,13 +1,13 @@
 .menubar {
-    position: sticky;
+    position: absolute;
     top: 0;
     display: none;
 }
 #blank {
-    height: 10000px;
+    height: 3000px;
 }
 #animationlogo {
-    position: sticky;
+    position: absolute;
     width: 100%;
     top: 0;
     left: 10%;
