@@ -1,79 +1,14 @@
-.slide {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
+.menubar {
+    position: sticky;
+    top: 0;
+    display: none;
+}
+#blank {
+    height: 10000px;
+}
+#animationlogo {
+    position: sticky;
     width: 100%;
-    flex-shrink: 0;
-    transition: left 1s;
-}
-.images {
-    display: flex;
-    flex-wrap: nowrap;
-    overflow: hidden;
-    position: relative;
-    width: 86%;
-    margin-left: 7%;
-    border-radius: 20px;
-}
-.mainimage {
-    overflow: hidden;
-    position: relative;
-    width: 100%;
-    margin-bottom: 5vh;
-}
-#slidebuttonleft {
-    border: none;
-    background: none;
-    font-weight: 900;
-    font-size: 5vw;
-    position: absolute;
-    top: 45%;
-    left: 2%;
-    color: darkgray;
-}
-#slidebuttonright {
-    border: none;
-    background: none;
-    font-weight: 900;
-    font-size: 5vw;
-    position: absolute;
-    top: 45%;
-    right: 2%;
-    color: darkgray;
-}
-
-ul,
-li {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-}
-.slide_pagination {
-    display: flex;
-    gap: 5px;
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
-}
-.slide_pagination > li {
-    color: green;
-    cursor: pointer;
-    font-size: 4vw;
-}
-.slide_pagination > li.active {
-    color: greenyellow;
-}
-#imgeasteregg {
-    border: none;
-    background-color: rgba(0, 0, 0, 0);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-    width: 100%;
-    flex-shrink: 0;
-    transition: left 1s;
-    padding: 0;
+    top: 0;
+    left: 10%;
 }

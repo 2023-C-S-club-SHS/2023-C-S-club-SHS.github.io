@@ -3,7 +3,7 @@ let click: number = 0;
 function on_click() {
     click++;
     if (click % 20 === 10) {
-        if (location.href.includes("index.html")) {
+        if (location.href.includes("gallery.html")) {
             if (matchMedia("(max-width: 1025px)").matches) {
                 document.getElementById("imgeasteregg")!.style.display = "block";
             } else {
@@ -12,7 +12,7 @@ function on_click() {
         }
     }
     else if (click % 20 === 0) {
-        if (location.href.includes("index.html")) {
+        if (location.href.includes("gallery.html")) {
             if (matchMedia("(max-width: 1025px)").matches) {
                 document.getElementById("imgeasteregg")!.style.display = "none";
             } else {

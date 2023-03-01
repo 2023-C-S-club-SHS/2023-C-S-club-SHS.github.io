@@ -1,0 +1,64 @@
+.background {
+    color: white;
+    width: 100%;
+    opacity: 50%;
+    height: auto;
+    filter: brightness(150%);
+}
+.title {
+    position: relative;
+    overflow: hidden;
+    height: 15vh;
+    margin-bottom: 5vh;
+}
+#title {
+    position: absolute;
+    font-size: 10vw;
+    font-weight: 900;
+    color: white;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.slide {
+    width: 100%;
+    height: auto;
+}
+.mainimage {
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    margin-bottom: 5vh;
+}
+#slidebuttonleft {
+    display: none;
+    border: none;
+    background: none;
+    font-weight: 900;
+    font-size: 5vw;
+    position: absolute;
+    top: 45%;
+    left: 2vw;
+    color: darkgray;
+}
+#slidebuttonright {
+    display: none;
+    border: none;
+    background: none;
+    font-weight: 900;
+    font-size: 5vw;
+    position: absolute;
+    top: 45%;
+    right: 2vw;
+    color: darkgray;
+}
+ul {
+    display: none;
+}
+#imgeasteregg {
+    border: none;
+    background-color: rgba(0, 0, 0, 0);
+    display: none;
+    width: 100%;
+    padding: 0;
+}

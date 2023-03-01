@@ -1,3 +1,5 @@
+let url: string = ""
+
 async function submit() {
     if (idcheck() && namecheck() && telcheck() && filecheck() && questioncheck() && agreecheck()) {
 

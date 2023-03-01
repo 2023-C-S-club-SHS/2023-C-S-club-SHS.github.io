@@ -12,11 +12,14 @@ window.onload = function() {
         counttext(2);
     }
     loadEasteregg();
-    if (location.href.includes("index.html")) {
+    if (location.href.includes("gallery.html")) {
         if (matchMedia('(min-width: 1025px)').matches) {
             slideWidth = slide.clientWidth;
             next();
         }
+    }
+    if (location.href.includes("index.html")) {
+        interval = setInterval(animation, 1);
     }
 }
 
@@ -67,5 +70,9 @@ function loadEasteregg() {
     if (Cookies.get('easteregg') === "true") {
         click = 10;
         easteregg2();
+        if (location.href.includes("gallery.html")) {
+            document.getElementById("imgeasteregg")!.style.display = "block";
+            easteregg1();
+        }
     }
 }

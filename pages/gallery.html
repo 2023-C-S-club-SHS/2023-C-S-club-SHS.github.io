@@ -15,24 +15,32 @@
     <meta property="og:url" content="https://2023shscsclub.github.io/pages/introduce.html">
     <meta property="og:image" content="https://github.com/2023shscsclub/2023shscsclub.github.io/blob/main/resources/clublogo.png?raw=true">
     <meta property="og:description" content="2023년 서울고등학교 컴퓨터 과학부 소개">
-    <title>동아리 소개</title>
+    <title>컴퓨터 과학부 갤러리</title>
     <link rel="stylesheet" media="(min-width: 1025px)" href="../stylesheets/style.css"/>
     <link rel="stylesheet" media="(max-width: 1025px)" href="../stylesheets/mstyle.css">
-    <link rel="stylesheet" media="(min-width: 1025px)" href="../stylesheets/introduce.css"/>
-    <link rel="stylesheet" media="(max-width: 1025px)" href="../stylesheets/mintroduce.css">
+    <link rel="stylesheet" media="(min-width: 1025px)" href="../stylesheets/gallery.css"/>
+    <link rel="stylesheet" media="(max-width: 1025px)" href="../stylesheets/mgallery.css">
 </head>
 <body>
     <div class="menubar">
         <a href="../index.html"><img id="mainlogo" src="../resources/clublogo.png" alt="서울고등학교 컴퓨터 과학부"></a>
-        <a class="menu" href="introduce.html">동아리 소개</a>
+        <a class="menu" href="gallery.html">갤러리</a>
         <a class="menu" id="enroll" href="enroll.html">지원하기</a>
     </div>
     <div class="title">
         <img class="background" src="../resources/groupphoto.jpeg"/>
-        <h1 id="title">동아리 소개</h1>
+        <h1 id="title">갤러리</h1>
     </div>
-    <div class="content">
-
+    <div class="mainimage">
+        <div class="images">
+            <img class="slide" id="first" src="../resources/groupphoto.jpeg">
+            <img class="slide" id="second" src="../resources/working1.jpeg">
+            <img class="slide" id="third" src="../resources/working2.jpeg">
+            <button id="imgeasteregg" onclick="easteregg2()"><img class="slide" id="forth" src="../resources/easteregg.jpeg"></button>
+        </div>
+        <button id="slidebuttonleft" onclick="previous()"><</button>
+        <button id="slidebuttonright" onclick="next()">></button>
+        <ul class="slide_pagination"></ul>
     </div>
     <div class="end">
         <div class="team">
@@ -48,6 +56,7 @@
             <a class="contacta" href="mailto:seoulcsclub@gmail.com" id="email"><img class="contact_image" src="https://cdn.jsdelivr.net/npm/simple-icons@v8/icons/gmail.svg"/></a>
         </div>
     </div>
+    <script src="../src/imageslide.js"></script>
     <script src="../src/easteregg.js"></script>
     <script src="../src/enrollcookie.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/js-cookie@3.0.1/dist/js.cookie.min.js"></script>
