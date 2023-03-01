@@ -1,7 +1,7 @@
 const logo = (document.getElementById("animationlogo") as HTMLElement)
 const menuBar = (document.getElementsByClassName("menubar")[0] as HTMLElement);
 let Scroll: number = 0;
-let interval: NodeJS.Timer;
+let interval: ReturnType<typeof setInterval>;
 const rpms: number = (logo.clientWidth - 100) / 300;
 let rpm: number = 0;
 
