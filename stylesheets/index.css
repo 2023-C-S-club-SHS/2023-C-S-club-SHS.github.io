@@ -26,22 +26,59 @@
 }
 .end {
     display: none;
+    top: 510vh;
 }
-.content {
+#content {
     display: none;
-    margin-top: 100px;
-    position: relative;
-    /*height: 200vh;*/
+    position: absolute;
+    width: 100%;
+    height: auto;
+    top: 0;
 }
-.content1 {
+.content-div {
+    position: relative;
+    top: 0;
+    height: 100vh;
+}
+.content-text {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+#content-text1 {
     position: relative;
     text-align: center;
+}
+span {
+    font-size: xx-large;
+    font-weight: 900;
+    display: block;
     background-clip: text;
-    -webkit-background-clip: text;
     color: transparent;
     background-image: linear-gradient(180deg, #ffb6ff, #b344ff 10%, #ae38ff 33%, #ffb6ff 45%, #ffe3ff 50%, #ffb6ff 66%, #b344ff);
-    background-size: 100% 300%;
-    background-position-y: 0%;
+}
+#content-text2, #content-text4, #content-text6 {
+    position: absolute;
+    right: 10%;
+    color: #ffa137
+}
+#content-text3, #content-text5 {
+    position: absolute;
+    left: 10%;
+    color: #de3e66
+}
+#content-div6 {
+    display: none;
+}
+.button {
+    position: absolute;
+    background-color: #68dda8;
+    border: none;
+    border-radius: 20px;
+    font-size: 20px;
+    cursor: pointer;
+    width: 12vw;
+    height: 5vh;
 }
 @keyframes gradient {
     from {
@@ -50,8 +87,4 @@
     to {
         background-position-y: 100%;
     }
-}
-#content1 {
-    position: relative;
-    top: 20%;
 }
