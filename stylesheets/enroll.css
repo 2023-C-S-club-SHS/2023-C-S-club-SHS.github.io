@@ -33,7 +33,7 @@
     color: red;
     font-size: 20px;
 }
-input {
+input, select {
     height: 2vh;
     position: relative;
     left: 15%;

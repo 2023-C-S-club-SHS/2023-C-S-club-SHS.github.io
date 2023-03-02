@@ -1,15 +1,10 @@
 function idcheck() {
-    let input = (document.getElementById("studentId") as HTMLInputElement);
-    if (/[1-2]\d{4}/.test(input.value) && input.value.length === 5) {
+    let input = (document.getElementById("number") as HTMLInputElement);
+    if (/\d{2}/.test(input.value) && input.value.length === 5) {
         return true;
     }
-    else if (/\d{5}/.test(input.value) && input.value.length === 5) {
-        alert("1학년 또는 2학년만 지원 가능합니다.");
-        input.value = "";
-        return false;
-    }
     else {
-        alert("학번은 5자리 숫자로 입력해주세요.");
+        alert("번호는 2자리 숫자로 입력해주세요.");
         input.value = "";
         return false;
     }

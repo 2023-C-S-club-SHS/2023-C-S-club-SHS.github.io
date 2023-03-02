@@ -36,8 +36,29 @@
         <h3 class="text">지원 과정 중 모든 연락은 문자 메시지를 통해 진행됩니다.</h3>
         <h3 class="text"><span>제출 완료후 정상 제출 확인을 위해 기장 휴대전화(<a href="tel:010-8343-7423" id="chieftel">010-8343-7423</a>)로 학번과 이름을 보내주세요.</span></h3>
         <h4 class="text"><sup class="star">*</sup>표시가 붙은 항목들은 필수 입력 항목입니다.</h4>
-        <p class="text">학번<sup class="star">*</sup></p>
-        <input type="tel" id="studentId" required onchange="idcheck()" pattern="[1-2]\d{4}" placeholder="ex) 11501">
+        <p class="text">학년<sup class="star">*</sup></p>
+        <select id="grade" required>
+            <option value="1">1학년</option>
+        </select>
+        <p class="text">반<sup class="star">*</sup></p>
+        <select id="class" required>
+            <option value="1">1반</option>
+            <option value="2">2반</option>
+            <option value="3">3반</option>
+            <option value="4">4반</option>
+            <option value="5">5반</option>
+            <option value="6">6반</option>
+            <option value="7">7반</option>
+            <option value="8">8반</option>
+            <option value="9">9반</option>
+            <option value="10">10반</option>
+            <option value="11">11반</option>
+            <option value="12">12반</option>
+            <option value="13">13반</option>
+            <option value="14">14반</option>
+        </select>
+        <p class="text">번호<sup class="star">*</sup></p>
+        <input type="tel" id="number" required onchange="idcheck()" pattern="\d{2}" placeholder="ex) 01, 32">
         <p class="text">이름<sup class="star">*</sup></p>
         <input type="text" id="name" required onchange="namecheck()" pattern="[가-힣]{2,}" placeholder="ex) 홍길동">
         <p class="text">연락 가능한 휴대전화번호('-' 없이)<sup class="star">*</sup></p>

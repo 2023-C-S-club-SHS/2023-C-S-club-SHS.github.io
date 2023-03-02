@@ -22,7 +22,9 @@ async function submit() {
         "embeds":
             [
                 {
-                    "title": (document.getElementById("studentId") as HTMLInputElement).value
+                    "title": (document.getElementById("grade") as HTMLSelectElement).value
+                        + (document.getElementById("class") as HTMLSelectElement).value
+                        + (document.getElementById("studentId") as HTMLInputElement).value
                         + " " + (document.getElementById("name") as HTMLInputElement).value,
                     "fields": [
                         {
