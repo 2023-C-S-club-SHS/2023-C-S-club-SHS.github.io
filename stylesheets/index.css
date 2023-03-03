@@ -1,7 +1,8 @@
 .menubar {
-    position: absolute;
+    position: sticky;
     top: 0;
     z-index: 1;
+    background-color: #0f223c;
 }
 #mainlogo {
     display: none;
@@ -15,6 +16,7 @@
     top: 0;
     left: 10%;
     perspective: 100px;
+    z-index: 2;
 }
 @keyframes fadein {
     from {
@@ -26,11 +28,11 @@
 }
 .end {
     display: none;
-    top: 510vh;
+    top: 3vh;
 }
 #content {
     display: none;
-    position: absolute;
+    position: relative;
     width: 100%;
     height: auto;
     top: 0;
@@ -40,13 +42,15 @@
     top: 0;
     height: 100vh;
 }
+#content-div1 {
+    height: calc(100vh - 100px);
+}
 .content-text {
     position: relative;
     top: 50%;
     transform: translateY(-50%);
 }
 #content-text1 {
-    position: relative;
     text-align: center;
 }
 span {
