@@ -1,7 +1,10 @@
 .menubar {
-    position: relative;
+    position: sticky;
     height: 10vh;
     width: 100%;
+    top: 0;
+    background-color: #0f223c;
+    z-index: 1;
 }
 body {
     max-width: 100%;
