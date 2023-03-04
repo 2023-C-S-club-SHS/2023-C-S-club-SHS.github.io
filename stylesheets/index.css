@@ -63,7 +63,7 @@
     height: 800vh;
     width: 100%;
     top: 0;
-    background-image: linear-gradient(#0f223c 15.97%, #68dda8 46.22%, #255949 47.48%, #68dda8 49.58%, #0f223c 81.09%);
+    background-image: linear-gradient(#0f223c 15.97%, #68dda8 40.34%, #255949 48.74%, #68dda8 58.82%, #0f223c 81.09%);
     display: block;
     will-change: transform;
     mix-blend-mode: darken;
