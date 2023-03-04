@@ -1,6 +1,6 @@
 function idcheck() {
     let input = (document.getElementById("number") as HTMLInputElement);
-    if (/\d{2}/.test(input.value) && input.value.length === 5) {
+    if (/\d{2}/.test(input.value) && input.value.length === 2) {
         return true;
     }
     else {
