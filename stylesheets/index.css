@@ -24,6 +24,8 @@
     display: none;
     top: 3vh;
 }
+
+
 #content {
     display: none;
     position: relative;
@@ -31,6 +33,14 @@
     height: auto;
     top: 0;
 }
+
+
+.content-sticky {
+    position: relative;
+    height: 200vh;
+}
+
+
 .content-div {
     position: relative;
     top: 0;
@@ -38,6 +48,45 @@
 }
 #content-div1 {
     height: calc(100vh - 100px);
+}
+#content-div2, #content-div3, #content-div4 {
+    position: sticky;
+    top: 0;
+}
+#content-div6 {
+    display: none;
+}
+
+
+.content-gradient {
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+    top: 50vh;
+    background-image: linear-gradient(180deg, #0f223c, #68dda8, #0f223c);
+}
+#content-gradient2 {
+    display: block;
+    will-change: transform;
+    mix-blend-mode: darken;
+}
+#content-text2 {
+    overflow: hidden;
+    background-color: #0f223c;
+}
+#content-text2 p {
+    /*display: inline;*/
+    color: #ffffff;
+}
+
+
+@keyframes gradient {
+    from {
+        background-position-y: 0%;
+    }
+    to {
+        background-position-y: 100%;
+    }
 }
 .content-text {
     position: relative;
@@ -47,29 +96,33 @@
 #content-text1 {
     text-align: center;
 }
-span {
-    font-size: xx-large;
-    font-weight: 900;
-    display: block;
-    background-clip: text;
-    color: transparent;
-    background-image: linear-gradient(180deg, #ffb6ff, #b344ff 10%, #ae38ff 33%, #ffb6ff 45%, #ffe3ff 50%, #ffb6ff 66%, #b344ff);
+/*span {*/
+/*    font-size: xx-large;*/
+/*    font-weight: 900;*/
+/*    display: block;*/
+/*    background-clip: text;*/
+/*    -webkit-background-clip: text;*/
+/*    color: transparent;*/
+/*}*/
+#content-text1 span {
+    background: none;
+    color: #de3e66;
 }
 #content-text2, #content-text4, #content-text6 {
     position: absolute;
     right: 10%;
-    color: #ffa137
 }
 #content-text3, #content-text5 {
     position: absolute;
     left: 10%;
-    color: #de3e66
 }
-#content-div6 {
-    display: none;
+#content-text5 {
+    color: #68dda8;
 }
+
+
 .button {
-    position: absolute;
+    position: relative;
     background-color: #68dda8;
     border: none;
     border-radius: 20px;
@@ -77,12 +130,4 @@ span {
     cursor: pointer;
     width: 12vw;
     height: 5vh;
-}
-@keyframes gradient {
-    from {
-        background-position-y: 0%;
-    }
-    to {
-        background-position-y: 100%;
-    }
 }
