@@ -14,6 +14,7 @@ function animation() {
     const scale: number = 1 - Scroll / 300;
     const margin: number = window.innerWidth * 0.1;
     logo.style.width = (scale * 10 * margin + 100).toString() + "px";
+    console.log(scale*10*margin+100);
     if (matchMedia('(min-width: 1025px)').matches) {
         logo.style.left = (Scroll / 1000 + margin).toString() + "px";
         if (logo.clientWidth < 90) disable = true;
