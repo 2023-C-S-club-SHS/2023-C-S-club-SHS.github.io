@@ -1,3 +1,8 @@
+body, .menubar {
+    background-color: #000000;
+}
+
+
 #mainlogo {
     display: none;
 }
@@ -68,13 +73,13 @@
     mix-blend-mode: darken;
 }
 #content-gradient2 {
-    background-image: linear-gradient(135deg, rgba(15,34,60,1) 20%, rgba(104,221,168,1) 39%, rgba(0,241,255,1) 50%, rgba(104,221,168,1) 61%, rgba(15,34,60,1) 80%);
+    background-image: linear-gradient(135deg, rgba(0,0,0,1) 20%, rgba(104,221,168,1) 39%, rgba(0,241,255,1) 50%, rgba(104,221,168,1) 61%, rgba(0,0,0,1) 80%);
 }
 #content-gradient3{
-    background-image: linear-gradient(135deg, rgba(15,34,60,1) 20%, rgba(222,62,102,1) 39%, rgba(255,0,254,1) 50%, rgba(222,62,102,1) 61%, rgba(15,34,60,1) 80%);
+    background-image: linear-gradient(135deg, rgba(0,0,0,1) 20%, rgba(222,62,102,1) 39%, rgba(255,0,254,1) 50%, rgba(222,62,102,1) 61%, rgba(0,0,0,1) 80%);
 }
 #content-gradient4 {
-    background-image: linear-gradient(135deg, rgba(15,34,60,1) 20%, rgba(255,161,55,1) 39%, rgba(215,255,0,1) 50%, rgba(255,161,55,1) 61%, rgba(15,34,60,1) 80%);
+    background-image: linear-gradient(135deg, rgba(0,0,0,1) 20%, rgba(255,161,55,1) 39%, rgba(215,255,0,1) 50%, rgba(255,161,55,1) 61%, rgba(0,0,0,1) 80%);
 }
 
 
@@ -98,7 +103,7 @@ span {
 }
 #content-text2, #content-text3, #content-text4 {
     overflow: hidden;
-    background-color: #0f223c;
+    background-color: #000000;
 }
 #content-text2, #content-text3, #content-text4 span {
     color: #ffffff;

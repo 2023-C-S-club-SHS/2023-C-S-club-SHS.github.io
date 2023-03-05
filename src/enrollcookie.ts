@@ -18,9 +18,6 @@ window.onload = function() {
             next();
         }
     }
-    if (location.href.includes("index.html")) {
-        interval = setInterval(animation, 1);
-    }
 }
 
 function saveCookie() {
