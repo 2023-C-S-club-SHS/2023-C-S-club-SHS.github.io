@@ -9,18 +9,21 @@ const rpms: number = (logo.clientWidth - 100) / 300;
 let rpm: number = 0;
 
 function animation() {
+    let disable: boolean = false;
     clearInterval(interval);
     const scale: number = 1 - Scroll / 300;
-    const margin: number = document.getElementsByTagName('body')[0].clientWidth * 0.1;
+    const margin: number = window.innerWidth * 0.1;
     logo.style.width = (scale * 10 * margin + 100).toString() + "px";
     if (matchMedia('(min-width: 1025px)').matches) {
         logo.style.left = (Scroll / 1000 + margin).toString() + "px";
+        if (logo.clientWidth < 90) disable = true;
     } else {
         logo.style.left = (Scroll / 1000).toString() + "px";
+        if (logo.clientWidth < window.innerHeight * 0.1) disable = true;
     }
     // logo.style.transform = "rotateZ(" + (scale * 360 + 1.2).toString() + "deg)";
     rpm += rpms;
-    if (logo.clientWidth < 90) {
+    if (disable) {
         clearInterval(interval);
         logo.style.display = "none";
         mainlogo.style.display = "block";
