@@ -10,15 +10,15 @@ window.onload = function() {
         loadCookie();
         counttext(1);
         counttext(2);
-    }
-    loadEasteregg();
-    if (location.href.includes("gallery.html")) {
+    } else if (location.href.includes("gallery.html")) {
         if (matchMedia('(min-width: 1025px)').matches) {
             slideWidth = slide.clientWidth;
             next();
         }
+    } else {
+        interval = setInterval(animation, 1);
     }
-    console.log("test2");
+    loadEasteregg();
 }
 
 function saveCookie() {

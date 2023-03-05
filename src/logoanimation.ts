@@ -43,9 +43,3 @@ function animation() {
     }
     Scroll++;
 }
-
-if (location.href.includes("index.html")) {
-    interval = setInterval(animation, 1);
-    console.log("test");
-}
-console.log("test1");
