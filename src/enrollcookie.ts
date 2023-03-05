@@ -18,6 +18,7 @@ window.onload = function() {
             next();
         }
     }
+    console.log("test2");
 }
 
 function saveCookie() {
