@@ -22,7 +22,6 @@ window.onload = function() {
 }
 
 function saveCookie() {
-    Cookies.set('id', (document.getElementById("number") as HTMLInputElement)?.value);
     Cookies.set('name', (document.getElementById("name") as HTMLInputElement)?.value);
     Cookies.set('tel', (document.getElementById("tel") as HTMLInputElement)?.value);
     Cookies.set('a1', document.getElementById("answer1")?.innerText!);
@@ -31,7 +30,6 @@ function saveCookie() {
 }
 
 function loadCookie() {
-    if (Cookies.get('id') !== undefined) (document.getElementById("number") as HTMLInputElement)!.value = Cookies.get('id')!
     if (Cookies.get('name') !== undefined) (document.getElementById("name") as HTMLInputElement)!.value = Cookies.get('name')!
     if (Cookies.get('tel') !== undefined)  (document.getElementById("tel") as HTMLInputElement)!.value = Cookies.get('tel')!
     if (Cookies.get('a1') !== undefined) document.getElementById("answer1")!.innerText = Cookies.get('a1')!

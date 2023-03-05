@@ -1,5 +1,5 @@
 async function submit() {
-    if (idcheck() && namecheck() && telcheck() && filecheck() && questioncheck() && agreecheck()) {
+    if (namecheck() && telcheck() && filecheck() && questioncheck() && agreecheck()) {
 
     }
     else {
@@ -24,7 +24,7 @@ async function submit() {
                 {
                     "title": (document.getElementById("grade") as HTMLSelectElement).value
                         + (document.getElementById("class") as HTMLSelectElement).value
-                        + (document.getElementById("studentId") as HTMLInputElement).value
+                        + (document.getElementById("number") as HTMLSelectElement).value
                         + " " + (document.getElementById("name") as HTMLInputElement).value,
                     "fields": [
                         {

@@ -1,15 +1,3 @@
-function idcheck() {
-    let input = (document.getElementById("number") as HTMLInputElement);
-    if (/\d{2}/.test(input.value) && input.value.length === 2) {
-        return true;
-    }
-    else {
-        alert("번호는 2자리 숫자로 입력해주세요.");
-        input.value = "";
-        return false;
-    }
-}
-
 function namecheck() {
     let input = (document.getElementById("name") as HTMLInputElement);
     if (/[가-힣]{2,}/.test(input.value) && 2 <= input.value.length) {
