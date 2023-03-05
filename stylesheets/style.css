@@ -58,6 +58,10 @@ body {
 .contacta {
     margin-left: 1vw;
 }
+.contacta:hover {
+    filter: invert(100%);
+    cursor: pointer;
+}
 #easteregg {
     border: 0;
     background: none;
@@ -84,4 +88,8 @@ body {
     100% {
         transform: rotate(360deg);
     }
+}
+button:hover {
+    filter: invert(100%);
+    cursor: pointer;
 }

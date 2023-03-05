@@ -104,3 +104,6 @@ br {
 #agree {
     left: 2%;
 }
+#agree:hover {
+    cursor: pointer;
+}
