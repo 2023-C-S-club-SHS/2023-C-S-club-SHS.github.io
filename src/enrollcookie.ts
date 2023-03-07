@@ -19,6 +19,7 @@ window.onload = function() {
         interval = setInterval(animation, 1);
     }
     loadEasteregg();
+    console.log("당신은 개발자 도구를 열으셨군요!\n소스 코드에 면접이 도움이 될만한 것이 있을지도 몰라요!\n한 번 찾아보는건 어때요?")
 }
 
 function saveCookie() {
