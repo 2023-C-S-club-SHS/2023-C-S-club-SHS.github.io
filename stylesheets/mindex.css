@@ -85,12 +85,19 @@ body, .menubar {
 
 .content-text {
     text-align: center;
-    position: relative;
-    top: 50%;
-    transform: translateY(-50%);
+    position: absolute;
+    bottom: 15vh;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
 }
 #content-text1 {
     text-align: center;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    height: auto;
+    left: 0;
 }
 span {
     font-size: x-large;
@@ -110,6 +117,13 @@ span {
 }
 #content-text5 {
     color: #68dda8;
+}
+
+
+.mainpageimage {
+    position: absolute;
+    height: 40vh;
+    top: 20vh;
 }
 
 
