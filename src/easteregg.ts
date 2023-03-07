@@ -39,6 +39,8 @@ function easteregg2() {
     body.style.backgroundImage = "url('../resources/easteregg1.jpeg')";
     document.getElementById('enroll')!.style.color = "purple";
     (document.getElementsByClassName('bonobono') as HTMLCollectionOf<HTMLElement>)[0].style.display = "block";
+    (document.getElementsByClassName('menubar') as HTMLCollectionOf<HTMLElement>)[0].style.backgroundImage = "url('resources/easteregg1.jpeg')";
+    (document.getElementsByClassName('menubar') as HTMLCollectionOf<HTMLElement>)[0].style.backgroundImage = "url('../resources/easteregg1.jpeg')";
 }
 
 function easteregg3() {
@@ -54,9 +56,9 @@ function easteregg3() {
 function easteregg4() {
     let body = document.querySelector('body') as HTMLElementTagNameMap["body"];
     body.style.backgroundImage = "none";
-    body.style.backgroundColor = "#0f223c"
     document.getElementById('enroll')!.style.color = "lawngreen";
     (document.getElementsByClassName('bonobono') as HTMLCollectionOf<HTMLElement>)[0].style.display = "none";
+    (document.getElementsByClassName('menubar') as HTMLCollectionOf<HTMLElement>)[0].style.backgroundImage = "none";
 }
 
 // 이 함수를 찾으셨군요!!!! 한 번 실행해보는건 어때요?
