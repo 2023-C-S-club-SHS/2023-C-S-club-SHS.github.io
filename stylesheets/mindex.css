@@ -119,6 +119,7 @@ span {
 #content-text5 {
     color: #68dda8;
     bottom: 10vh;
+    height: 30vh;
 }
 
 
@@ -126,6 +127,8 @@ span {
     position: absolute;
     height: 40vh;
     top: 20vh;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 
