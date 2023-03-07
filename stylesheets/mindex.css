@@ -57,6 +57,7 @@ body, .menubar {
 #content-div2, #content-div3, #content-div4 {
     position: sticky;
     top: 0;
+    overflow-x: hidden;
 }
 #content-div6 {
     display: none;
@@ -117,6 +118,7 @@ span {
 }
 #content-text5 {
     color: #68dda8;
+    bottom: 10vh;
 }
 
 
