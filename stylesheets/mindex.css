@@ -50,6 +50,7 @@ body, .menubar {
     position: relative;
     top: 0;
     height: 100vh;
+    overflow-x: hidden;
 }
 #content-div1 {
     height: calc(100vh - 100px);
@@ -57,7 +58,6 @@ body, .menubar {
 #content-div2, #content-div3, #content-div4 {
     position: sticky;
     top: 0;
-    overflow-x: hidden;
 }
 #content-div6 {
     display: none;
