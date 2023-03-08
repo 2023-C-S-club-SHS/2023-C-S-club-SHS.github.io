@@ -19,10 +19,10 @@ window.onload = function() {
         interval = setInterval(animation, 1);
     }
     loadEasteregg();
+    console.log("당신은 개발자 도구를 열으셨군요!\n소스 코드에 면접이 도움이 될만한 것이 있을지도 몰라요!\n한 번 찾아보는건 어때요?")
 }
 
 function saveCookie() {
-    Cookies.set('id', (document.getElementById("number") as HTMLInputElement)?.value);
     Cookies.set('name', (document.getElementById("name") as HTMLInputElement)?.value);
     Cookies.set('tel', (document.getElementById("tel") as HTMLInputElement)?.value);
     Cookies.set('a1', document.getElementById("answer1")?.innerText!);
@@ -31,7 +31,6 @@ function saveCookie() {
 }
 
 function loadCookie() {
-    if (Cookies.get('id') !== undefined) (document.getElementById("number") as HTMLInputElement)!.value = Cookies.get('id')!
     if (Cookies.get('name') !== undefined) (document.getElementById("name") as HTMLInputElement)!.value = Cookies.get('name')!
     if (Cookies.get('tel') !== undefined)  (document.getElementById("tel") as HTMLInputElement)!.value = Cookies.get('tel')!
     if (Cookies.get('a1') !== undefined) document.getElementById("answer1")!.innerText = Cookies.get('a1')!

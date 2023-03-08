@@ -12,7 +12,7 @@ let rpm: number = 0;
 function animation() {
     let disable: boolean = false;
     clearInterval(interval);
-    const scale: number = 1 - Scroll / 300;
+    const scale: number = 1 - Scroll / 200;
     logo.style.width = (scale * 10 * margin + 100).toString() + "px";
     if (matchMedia('(min-width: 1025px)').matches) {
         logo.style.left = (Scroll / 1000 + margin).toString() + "px";

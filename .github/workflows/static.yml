@@ -35,7 +35,7 @@ jobs:
           rm -rf src/submitb.ts
           npm install
           tsc
-          rm -rf node_modules package-lock.json package.json tsconfig.json
+          rm -rf node_modules package-lock.json package.json tsconfig.json qr_generate.py
       - name: Setup Pages
         uses: actions/configure-pages@v3
       - name: Upload artifact

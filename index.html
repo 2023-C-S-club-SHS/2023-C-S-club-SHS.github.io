@@ -1,6 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <script>
+        if (window.navigator.userAgent.toLowerCase().includes("samsungbrowser")) {
+            alert("이 사이트는 삼성 인터넷 브라우저에서 정상적으로 작동하지 않을 수 있습니다. 다른 브라우저를 사용해주세요.");
+        }
+    </script>
     <meta charset="UTF-8">
     <meta name="theme-color" content="#000000">
     <meta name="viewport" content="initial-scale=1.0, maximum-scale=1, width=device-width"/>
@@ -40,15 +45,11 @@
         </div>
         <div id="content-sticky2" class="content-sticky">
             <div id="content-div2" class="content-div">
+                <img src="resources/mainpage1.jpg" class="mainpageimage" id="mainpageimage1">
                 <div id="content-text2" class="content-text">
                     <span class="content content2">
-                        2023 서울고등학교 컴퓨터 과학부<br/>
-                        아래로 스크롤<br/>
-                        하하하하하하<br>
-                        하하하하하하<br>
-                        하하하하하하<br>
-                        하하하하하하<br>
-                        하하하하하하<br>
+                        Seoul high school’s cs club<br/><br/>
+                        서울고등학교 컴퓨터과학부가<br/>
                     </span>
                 </div>
             </div>
@@ -56,10 +57,11 @@
         </div>
         <div id="content-sticky3" class="content-sticky">
             <div id="content-div3" class="content-div">
+                <img src="resources/mainpage2.jpg" class="mainpageimage" id="mainpageimage2">
                 <div id="content-text3" class="content-text">
                     <span class="content content3">
-                        2023 서울고등학교 컴퓨터 과학부<br/>
-                        아래로 스크롤<br/>
+                        Maketh<br/><br/>
+                        만든다<br/>
                     </span>
                 </div>
             </div>
@@ -67,18 +69,24 @@
         </div>
         <div id="content-sticky4" class="content-sticky">
             <div id="content-div4" class="content-div">
+                <img src="resources/mainpage3.jpg" class="mainpageimage" id="mainpageimage3">
                 <div id="content-text4" class="content-text">
                     <span class="content content4">
-                        2023 서울고등학교 컴퓨터 과학부<br/>
-                        아래로 스크롤<br/>
+                        Robots and AI<br/><br/>
+                        로봇과 인공지능<br/>
                     </span>
                 </div>
             </div>
             <div id="content-gradient4" class="content-gradient"></div>
         </div>
         <div id="content-div5" class="content-div">
+            <img src="resources/nano.png" class="mainpageimage" id="mainpageimage4">
             <div id="content-text5" class="content-text">
-                <h1 class="content content5">부원 신청하러 가기</h1>
+                <span class="content content5">
+                    상상을 초월한 2023 컴퓨터과학부 활동<br/><br/>
+                    여러분의 관심과 많은 참여가 필요합니다
+                </span>
+                <h1 class="content content5">지금 부원 신청하러 가기</h1>
                 <button class="content content5 button" onclick="location.href='pages/enroll.html'">지원하기 →</button>
             </div>
         </div>
@@ -97,7 +105,7 @@
             <img class="bonobono_image" src="resources/easteregg2.png">
         </div>
         <div class="contact">
-            <a class="contacta" href="https://www.instagram.com/eogusdl_/" id="instagram"><img class="contact_image" src="https://cdn.jsdelivr.net/npm/simple-icons@v8/icons/instagram.svg"/></a>
+            <a class="contacta" href="https://instagram.com/seoul_cs.2023" id="instagram"><img class="contact_image" src="https://cdn.jsdelivr.net/npm/simple-icons@v8/icons/instagram.svg"/></a>
             <a class="contacta" href="https://github.com/2023shscsclub" id="github"><img class="contact_image" src="https://cdn.jsdelivr.net/npm/simple-icons@v8/icons/github.svg"/></a>
             <a class="contacta" href="mailto:seoulcsclub@gmail.com" id="email"><img class="contact_image" src="https://cdn.jsdelivr.net/npm/simple-icons@v8/icons/gmail.svg"/></a>
         </div>

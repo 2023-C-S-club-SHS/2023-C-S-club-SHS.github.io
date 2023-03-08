@@ -1,5 +1,5 @@
 async function submit() {
-    if (idcheck() && namecheck() && telcheck() && filecheck() && questioncheck() && agreecheck()) {
+    if (namecheck() && telcheck() && filecheck() && questioncheck() && agreecheck()) {
 
     }
     else {
@@ -24,7 +24,7 @@ async function submit() {
                 {
                     "title": (document.getElementById("grade") as HTMLSelectElement).value
                         + (document.getElementById("class") as HTMLSelectElement).value
-                        + (document.getElementById("studentId") as HTMLInputElement).value
+                        + (document.getElementById("number") as HTMLSelectElement).value
                         + " " + (document.getElementById("name") as HTMLInputElement).value,
                     "fields": [
                         {
@@ -36,7 +36,7 @@ async function submit() {
                             "value": "```" + document.getElementById("answer1")?.innerText + "```"
                         },
                         {
-                            "name": "2. 본인이 생각하는 자신의 장점과 단점을 작성해주세요",
+                            "name": "2. 본인이 생각하는 자신의 장점과 단점을 포함해 자신의 소개글을 작성해주세요",
                             "value": "```" + document.getElementById("answer2")?.innerText + "```"
                         }
                     ],
@@ -54,18 +54,46 @@ async function submit() {
         formFileData.append('file['+String(i)+']', ((document.getElementById('file') as HTMLInputElement).files as FileList)[i]);
     }
 
-    await fetch(url, {
-        method: 'POST',
-        body: formData
-    })
-    await fetch(url, {
-        method: 'POST',
-        body: formFileData
-    }).then(response=>response.text()).then(()=>{
-        alert("정상적으로 제출되었습니다.\n정상 제출 확인을 위해 기장 연락처(010-8343-7423)로 학번과 이름을 보내주세요.")
-        location.href="../index.html"
-    }).catch(err=>{
-        console.log(err)
-        alert("오류가 발생하였습니다.\n기장 연락처(010-8343-7423)로 연락 부탁드립니다.")
-    })
+    if ((document.getElementById('file') as HTMLInputElement).files?.length != 0)
+    {
+        await fetch(url, {
+            method: 'POST',
+            body: formData
+        }).then(response => {
+            if (!response.ok) {
+                alert("오류가 발생하였습니다.\n기장 연락처(010-8343-7423)로 연락 부탁드립니다.");
+            }
+            else {
+                alert("정상적으로 제출되었습니다.\n정상 제출 확인을 위해 기장 연락처(010-8343-7423)로 학번과 이름을 보내주세요.");
+                location.href = "../index.html"
+            }
+        }).catch(err => {
+            console.log(err);
+            alert("오류가 발생하였습니다.\n기장 연락처(010-8343-7423)로 연락 부탁드립니다.");
+        })
+        await fetch(url, {
+            method: 'POST',
+            body: formFileData
+        }).catch(err => {
+            console.log(err);
+            alert("파일 전송: 오류가 발생하였습니다.\n기장 연락처(010-8343-7423)로 연락 부탁드립니다.");
+        })
+    }
+    else {
+        await fetch(url, {
+            method: 'POST',
+            body: formData
+        }).then(response => {
+            if (!response.ok) {
+                alert("오류가 발생하였습니다.\n기장 연락처(010-8343-7423)로 연락 부탁드립니다.");
+            }
+            else {
+                alert("정상적으로 제출되었습니다.\n정상 제출 확인을 위해 기장 연락처(010-8343-7423)로 학번과 이름을 보내주세요.");
+                location.href = "../index.html"
+            }
+        }).catch(err => {
+            console.log(err);
+            alert("오류가 발생하였습니다.\n기장 연락처(010-8343-7423)로 연락 부탁드립니다.");
+        })
+    }
 }

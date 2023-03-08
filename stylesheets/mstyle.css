@@ -37,6 +37,7 @@ body {
     position: relative;
     width: 100%;
     height: auto;
+    margin-top: 4vh;
 }
 .team {
     color: darkgray;
@@ -59,6 +60,10 @@ body {
 }
 .contacta {
     position: absolute;
+}
+.contacta:hover {
+    filter: invert(100%);
+    cursor: pointer;
 }
 #github {
     left: 50%;
@@ -98,4 +103,8 @@ body {
     100% {
         transform: rotate(360deg);
     }
+}
+button:hover {
+    filter: invert(100%);
+    cursor: pointer;
 }

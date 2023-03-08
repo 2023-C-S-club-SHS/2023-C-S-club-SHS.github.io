@@ -73,13 +73,13 @@ body, .menubar {
     mix-blend-mode: darken;
 }
 #content-gradient2 {
-    background-image: linear-gradient(135deg, rgba(0,0,0,1) 20%, rgba(104,221,168,1) 39%, rgba(0,241,255,1) 50%, rgba(104,221,168,1) 61%, rgba(0,0,0,1) 80%);
+    background-image: linear-gradient(135deg, rgba(0,0,0,1) 25%, rgba(104,221,168,1) 39%, rgba(0,241,255,1) 50%, rgba(104,221,168,1) 61%, rgba(0,0,0,1) 75%);
 }
 #content-gradient3{
-    background-image: linear-gradient(135deg, rgba(0,0,0,1) 20%, rgba(222,62,102,1) 39%, rgba(255,0,254,1) 50%, rgba(222,62,102,1) 61%, rgba(0,0,0,1) 80%);
+    background-image: linear-gradient(135deg, rgba(0,0,0,1) 25%, rgba(222,62,102,1) 39%, rgba(255,0,254,1) 50%, rgba(222,62,102,1) 61%, rgba(0,0,0,1) 75%);
 }
 #content-gradient4 {
-    background-image: linear-gradient(135deg, rgba(0,0,0,1) 20%, rgba(255,161,55,1) 39%, rgba(215,255,0,1) 50%, rgba(255,161,55,1) 61%, rgba(0,0,0,1) 80%);
+    background-image: linear-gradient(135deg, rgba(0,0,0,1) 25%, rgba(255,161,55,1) 39%, rgba(215,255,0,1) 50%, rgba(255,161,55,1) 61%, rgba(0,0,0,1) 75%);
 }
 
 
@@ -87,22 +87,26 @@ body, .menubar {
     position: relative;
     top: 50%;
     transform: translateY(-50%);
+    width: 35vw;
 }
 #content-text1 {
     text-align: center;
+    width: 100%;
 }
 span {
-    font-size: xx-large;
+    font-size: x-large;
     font-weight: 900;
     display: block;
 }
 #content-text1 span {
+    font-size: xx-large;
     background: none;
     color: #de3e66;
 }
 #content-text2, #content-text4, #content-text6 {
     position: absolute;
-    right: 10%;
+    right: 10vw;
+    text-align: right;
 }
 #content-text2, #content-text3, #content-text4 {
     overflow: hidden;
@@ -113,10 +117,25 @@ span {
 }
 #content-text3, #content-text5 {
     position: absolute;
-    left: 10%;
+    left: 10vw;
+    text-align: left;
 }
 #content-text5 {
     color: #68dda8;
+}
+
+
+.mainpageimage {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 40vw;
+}
+#mainpageimage1, #mainpageimage3 {
+    left: 5vw;
+}
+#mainpageimage2, #mainpageimage4 {
+    right: 5vw;
 }
 
 
