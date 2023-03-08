@@ -59,27 +59,41 @@ async function submit() {
         await fetch(url, {
             method: 'POST',
             body: formData
+        }).then(response => {
+            if (!response.ok) {
+                alert("오류가 발생하였습니다.\n기장 연락처(010-8343-7423)로 연락 부탁드립니다.");
+            }
+            else {
+                alert("정상적으로 제출되었습니다.\n정상 제출 확인을 위해 기장 연락처(010-8343-7423)로 학번과 이름을 보내주세요.");
+                location.href = "../index.html"
+            }
+        }).catch(err => {
+            console.log(err);
+            alert("오류가 발생하였습니다.\n기장 연락처(010-8343-7423)로 연락 부탁드립니다.");
         })
         await fetch(url, {
             method: 'POST',
             body: formFileData
-        }).then(response => response.text()).then(() => {
-            alert("정상적으로 제출되었습니다.\n정상 제출 확인을 위해 기장 연락처(010-8343-7423)로 학번과 이름을 보내주세요.")
-            location.href = "../index.html"
         }).catch(err => {
-            console.log(err)
-            alert("오류가 발생하였습니다.\n기장 연락처(010-8343-7423)로 연락 부탁드립니다.")
+            console.log(err);
+            alert("파일 전송: 오류가 발생하였습니다.\n기장 연락처(010-8343-7423)로 연락 부탁드립니다.");
         })
     }
     else {
         await fetch(url, {
             method: 'POST',
             body: formData
-        }).then(response => response.text()).then(() => {
-            alert("정상적으로 제출되었습니다.\n정상 제출 확인을 위해 기장 연락처(010-8343-7423)로 학번과 이름을 보내주세요.")
+        }).then(response => {
+            if (!response.ok) {
+                alert("오류가 발생하였습니다.\n기장 연락처(010-8343-7423)로 연락 부탁드립니다.");
+            }
+            else {
+                alert("정상적으로 제출되었습니다.\n정상 제출 확인을 위해 기장 연락처(010-8343-7423)로 학번과 이름을 보내주세요.");
+                location.href = "../index.html"
+            }
         }).catch(err => {
-            console.log(err)
-            alert("오류가 발생하였습니다.\n기장 연락처(010-8343-7423)로 연락 부탁드립니다.")
+            console.log(err);
+            alert("오류가 발생하였습니다.\n기장 연락처(010-8343-7423)로 연락 부탁드립니다.");
         })
     }
 }
