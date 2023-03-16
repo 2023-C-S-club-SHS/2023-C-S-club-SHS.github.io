@@ -36,7 +36,7 @@ async function submit() {
                             "value": "```" + document.getElementById("answer1")?.innerText + "```"
                         },
                         {
-                            "name": "2. 본인이 생각하는 자신의 장점과 단점을 포함해 자신의 소개글을 작성해주세요",
+                            "name": "2. 자신의 소개글(장점, 단점, 활동 등)을 작성해주세요",
                             "value": "```" + document.getElementById("answer2")?.innerText + "```"
                         }
                     ],
