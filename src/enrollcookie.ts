@@ -23,6 +23,8 @@ window.onload = function() {
 }
 
 function saveCookie() {
+    Cookies.set('class', (document.getElementById('class') as HTMLSelectElement)?.value);
+    Cookies.set('number', (document.getElementById('number') as HTMLSelectElement)?.value);
     Cookies.set('name', (document.getElementById("name") as HTMLInputElement)?.value);
     Cookies.set('tel', (document.getElementById("tel") as HTMLInputElement)?.value);
     Cookies.set('a1', document.getElementById("answer1")?.innerText!);
@@ -31,10 +33,12 @@ function saveCookie() {
 }
 
 function loadCookie() {
-    if (Cookies.get('name') !== undefined) (document.getElementById("name") as HTMLInputElement)!.value = Cookies.get('name')!
-    if (Cookies.get('tel') !== undefined)  (document.getElementById("tel") as HTMLInputElement)!.value = Cookies.get('tel')!
-    if (Cookies.get('a1') !== undefined) document.getElementById("answer1")!.innerText = Cookies.get('a1')!
-    if (Cookies.get('a2') !== undefined) document.getElementById("answer2")!.innerText = Cookies.get('a2')!
+    if (Cookies.get('class') !== undefined) (document.getElementById('class') as HTMLSelectElement)!.value = Cookies.get('class')!;
+    if (Cookies.get('number') !== undefined) (document.getElementById('number') as HTMLSelectElement)!.value = Cookies.get('number')!;
+    if (Cookies.get('name') !== undefined) (document.getElementById("name") as HTMLInputElement)!.value = Cookies.get('name')!;
+    if (Cookies.get('tel') !== undefined) (document.getElementById("tel") as HTMLInputElement)!.value = Cookies.get('tel')!;
+    if (Cookies.get('a1') !== undefined) document.getElementById("answer1")!.innerText = Cookies.get('a1')!;
+    if (Cookies.get('a2') !== undefined) document.getElementById("answer2")!.innerText = Cookies.get('a2')!;
 }
 
 function eraseCookie() {
@@ -44,12 +48,14 @@ function eraseCookie() {
     else {
         return false;
     }
-    Cookies.remove('id');
+    Cookies.remove('class');
+    Cookies.remove('number');
     Cookies.remove('name');
     Cookies.remove('tel');
     Cookies.remove('a1');
     Cookies.remove('a2');
-    (document.getElementById("number") as HTMLInputElement)!.value = "";
+    (document.getElementById('class') as HTMLSelectElement)!.value = "01";
+    (document.getElementById("number") as HTMLSelectElement)!.value = "01";
     (document.getElementById("name") as HTMLInputElement)!.value = "";
     (document.getElementById("tel") as HTMLInputElement)!.value = "";
     document.getElementById("answer1")!.innerText = "";
